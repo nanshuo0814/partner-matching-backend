@@ -5,9 +5,10 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.nanshuo.springboot.model.domain.User;
 import com.nanshuo.springboot.model.request.user.*;
 import com.nanshuo.springboot.model.vo.user.UserLoginVO;
-import com.nanshuo.springboot.model.vo.user.UserSafety;
+import com.nanshuo.springboot.model.vo.user.UserSafetyVO;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 /**
  * 用户服务
@@ -76,11 +77,12 @@ public interface UserService extends IService<User> {
     // end domain 用户登录相关
 
     /**
-     * 获取用户vo(脱敏)
+     * 获取用户安全vo(脱敏)
      *
      * @param user 用户
-     * @return {@code UserVO}
+     * @return {@code UserSafetyVO}
      */
-    UserSafety getUserVO(User user);
+    UserSafetyVO getUserSafetyVO(User user);
 
+    List<UserSafetyVO> searchUsersByTags(List<String> tagNameList);
 }

@@ -1,16 +1,20 @@
 package com.nanshuo.springboot.controller;
 
 import com.nanshuo.springboot.annotation.Check;
+import com.nanshuo.springboot.annotation.CheckParam;
 import com.nanshuo.springboot.common.BaseResponse;
 import com.nanshuo.springboot.common.ErrorCode;
 import com.nanshuo.springboot.common.ResultUtils;
+import com.nanshuo.springboot.constant.NumberConstant;
 import com.nanshuo.springboot.constant.UserConstant;
 import com.nanshuo.springboot.exception.BusinessException;
 import com.nanshuo.springboot.exception.ThrowUtils;
 import com.nanshuo.springboot.model.domain.User;
-import com.nanshuo.springboot.model.request.user.*;
+import com.nanshuo.springboot.model.request.user.UserLoginRequest;
+import com.nanshuo.springboot.model.request.user.UserRegisterRequest;
+import com.nanshuo.springboot.model.request.user.UserUpdateInfoRequest;
 import com.nanshuo.springboot.model.vo.user.UserLoginVO;
-import com.nanshuo.springboot.model.vo.user.UserSafety;
+import com.nanshuo.springboot.model.vo.user.UserSafetyVO;
 import com.nanshuo.springboot.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -20,6 +24,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 import static com.nanshuo.springboot.constant.UserConstant.USER_LOGIN_STATE;
 
@@ -52,7 +57,7 @@ public class UserController {
      */
     @GetMapping("/current")
     @ApiOperation(value = "获取当前用户", notes = "获取当前用户")
-    public BaseResponse<UserSafety> getCurrentUser(HttpServletRequest request) {
+    public BaseResponse<UserSafetyVO> getCurrentUser(HttpServletRequest request) {
         Object userObj = request.getSession().getAttribute(USER_LOGIN_STATE);
         User currentUser = (User) userObj;
         if (currentUser == null) {
@@ -60,7 +65,7 @@ public class UserController {
         }
         long userId = currentUser.getId();
         User user = userService.getById(userId);
-        UserSafety safetyUser = userService.getUserVO(user);
+        UserSafetyVO safetyUser = userService.getUserSafetyVO(user);
         return ResultUtils.success(safetyUser);
     }
 
@@ -125,14 +130,15 @@ public class UserController {
     /**
      * 修改用户信息
      *
-     * @param request           请求
+     * @param request               请求
      * @param userUpdateInfoRequest 用户更新信息Request
      * @return {@code BaseResponse<Boolean>}
      */
     @PostMapping("/update")
+    @Check(checkParam = true, checkAuth = UserConstant.ADMIN_ROLE)
     @ApiOperation(value = "修改用户信息", notes = "修改用户信息")
     public BaseResponse<String> updateUserInfo(@RequestBody UserUpdateInfoRequest userUpdateInfoRequest,
-                                                HttpServletRequest request) {
+                                               HttpServletRequest request) {
         User loginUser = userService.getLoginUser(request);
         User user = new User();
         BeanUtils.copyProperties(userUpdateInfoRequest, user);
@@ -140,6 +146,19 @@ public class UserController {
         boolean result = userService.updateById(user);
         ThrowUtils.throwIf(!result, ErrorCode.FAIL);
         return ResultUtils.success("更新用户信息成功！");
+    }
+
+    /**
+     * 按标签搜索用户
+     *
+     * @param tagNameList 标签名称列表
+     * @return {@code BaseResponse<List<User>>}
+     */
+    @GetMapping("/search/tags")
+    @ApiOperation(value = "按标签搜索用户", notes = "按标签搜索用户")
+    public BaseResponse<List<UserSafetyVO>> searchUsersByTags(@RequestParam(required = false)
+                                                              List<String> tagNameList) {
+        return ResultUtils.success(userService.searchUsersByTags(tagNameList));
     }
 
     // end domain 用户的增删改查相关

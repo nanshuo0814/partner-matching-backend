@@ -1,32 +1,31 @@
 package com.nanshuo.springboot.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.baomidou.mybatisplus.core.toolkit.support.SFunction;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.nanshuo.springboot.common.ErrorCode;
-import com.nanshuo.springboot.constant.PageConstant;
 import com.nanshuo.springboot.constant.RedisKeyConstant;
 import com.nanshuo.springboot.constant.UserConstant;
 import com.nanshuo.springboot.exception.BusinessException;
-import com.nanshuo.springboot.exception.ThrowUtils;
 import com.nanshuo.springboot.mapper.UserMapper;
 import com.nanshuo.springboot.model.domain.User;
 import com.nanshuo.springboot.model.request.user.*;
 import com.nanshuo.springboot.model.vo.user.UserLoginVO;
-import com.nanshuo.springboot.model.vo.user.UserSafety;
+import com.nanshuo.springboot.model.vo.user.UserSafetyVO;
 import com.nanshuo.springboot.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ObjectUtils;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
@@ -89,6 +88,10 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
 
             // 插入数据
             User user = new User();
+            user.setUsername(UserConstant.DEFAULT_USER_NAME + System.currentTimeMillis());
+            user.setAvatarUrl(UserConstant.DEFAULT_USER_AVATAR);
+            user.setGender(UserConstant.DEFAULT_USER_GENDER);
+            user.setUserRole(UserConstant.USER_ROLE);
             user.setUserAccount(userAccount);
             user.setUserPassword(encryptPassword);
             user.setPlanetCode(planetCode);
@@ -163,6 +166,23 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     }
 
     /**
+     * 获取用户信息（脱敏）
+     *
+     * @param user 用户
+     * @return {@code UserVO}
+     */
+    @Override
+    public UserSafetyVO getUserSafetyVO(User user) {
+        if (user == null) {
+            return null;
+        }
+        UserSafetyVO userSafetyVO = new UserSafetyVO();
+        BeanUtils.copyProperties(user, userSafetyVO);
+        return userSafetyVO;
+    }
+
+
+    /**
      * 获取登录用户
      *
      * @param request 请求
@@ -215,7 +235,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     @Override
     public void saveUserToCache(User user) {
         String cacheKey = RedisKeyConstant.USER_LOGIN_STATE_CACHE + user.getId();
-        redisTemplate.opsForValue().set(cacheKey, user, 1, TimeUnit.HOURS);
+        redisTemplate.opsForValue().set(cacheKey, user, UserConstant.SAVE_USER_TO_CACHE_TIME, TimeUnit.HOURS);
     }
 
     /**
@@ -237,40 +257,35 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         return "退出登录成功！";
     }
 
-
-    /**
-     * 验证电子邮件代码
-     *
-     * @param email        电子邮件
-     * @param emailCaptcha 电子邮件验证码
-     */
-    private void validateEmailCode(String email, String emailCaptcha) {
-        Object trueEmailCaptcha = redisTemplate.opsForValue().get(RedisKeyConstant.EMAIL_CAPTCHA_KEY + email);
-        if (ObjectUtils.isEmpty(trueEmailCaptcha)) {
-            throw new BusinessException(ErrorCode.PARAMS_ERROR, "邮箱验证码已过期,请重新获取");
-        }
-        if (!emailCaptcha.equals(trueEmailCaptcha.toString())) {
-            throw new BusinessException(ErrorCode.PARAMS_ERROR, "请输入正确的邮箱验证码");
-        }
-    }
-
     // end domain 用户登录相关
 
     // domain 用户增删改查相关
-
     /**
-     * 获取用户vo
+     * 按标签搜索用户
      *
-     * @param user 用户
-     * @return {@code UserVO}
+     * @param tagNameList 标签名称列表
+     * @return {@code List<UserSafetyVO>}
      */
     @Override
-    public UserSafety getUserVO(User user) {
-        if (user == null) {
-            return null;
+    public List<UserSafetyVO> searchUsersByTags(List<String> tagNameList) {
+        if (CollectionUtils.isEmpty(tagNameList)) {
+            throw new BusinessException(ErrorCode.PARAMS_NULL);
         }
-        UserSafety userSafety = new UserSafety();
-        BeanUtils.copyProperties(user, userSafety);
-        return userSafety;
+        // 1. 先查询所有用户
+        QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+        List<User> userList = this.baseMapper.selectList(queryWrapper);
+        Gson gson = new Gson();
+        // 2. 在内存中判断是否包含要求的标签
+        return userList.stream().filter(user -> {
+            String tagsStr = user.getTags();
+            Set<String> tempTagNameSet = gson.fromJson(tagsStr, new TypeToken<Set<String>>() {}.getType());
+            tempTagNameSet = Optional.ofNullable(tempTagNameSet).orElse(new HashSet<>());
+            for (String tagName : tagNameList) {
+                if (!tempTagNameSet.contains(tagName)) {
+                    return false;
+                }
+            }
+            return true;
+        }).map(this::getUserSafetyVO).collect(Collectors.toList());
     }
 }

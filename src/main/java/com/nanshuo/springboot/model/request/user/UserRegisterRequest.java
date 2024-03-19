@@ -21,19 +21,19 @@ public class UserRegisterRequest implements Serializable {
     private static final long serialVersionUID = -3801105286374526414L;
 
     @ApiModelProperty(value = "账号", required = true)
-    @CheckParam(nullErrorMsg = "账号不能为空", minLength = 3, maxLength = 11, lenghtErrorMsg = "账号长度必须在3-11之间", regex = UserRegexEnums.ACCOUNT, regexErrorMsg = "账号必须以字母开头且只能包含字母、数字或下划线")
+    @CheckParam(alias = "账号", minLength = 3, maxLength = 11, regex = UserRegexEnums.ACCOUNT)
     private String userAccount;
 
     @ApiModelProperty(value = "密码", required = true)
-    @CheckParam(nullErrorMsg = "密码不能为空", minLength = 6, maxLength = 18, lenghtErrorMsg = "密码长度必须在6-18之间", regex = UserRegexEnums.PASSWORD, regexErrorMsg = "密码必须包含字母、数字或特殊字符")
+    @CheckParam(alias = "密码", minLength = 6, maxLength = 18, regex = UserRegexEnums.PASSWORD)
     private String userPassword;
 
     @ApiModelProperty(value = "第二遍输入的密码", required = true)
-    @CheckParam(nullErrorMsg = "第二遍输入的密码不能为空", minLength = 6, maxLength = 18, lenghtErrorMsg = "第二遍输入的密码长度必须在6-18之间", regex = UserRegexEnums.PASSWORD, regexErrorMsg = "第二遍输入的密码必须包含字母、数字或特殊字符")
+    @CheckParam(alias = "第二遍输入的密码", minLength = 6, maxLength = 18, regex = UserRegexEnums.PASSWORD)
     private String checkPassword;
 
     @ApiModelProperty(value = "星球编号", required = true)
-    @CheckParam(nullErrorMsg = "星球编号", minLength = 1, maxLength = 5, lenghtErrorMsg = "星球编号1-5之间", regex = UserRegexEnums.NUMBER, regexErrorMsg = "星球编号只能是数字")
+    @CheckParam(alias = "星球编号", minLength = 1, maxLength = 5, regex = UserRegexEnums.NUMBER)
     private String planetCode;
 
 }

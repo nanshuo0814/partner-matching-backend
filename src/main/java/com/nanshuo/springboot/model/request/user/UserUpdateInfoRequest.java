@@ -25,35 +25,35 @@ public class UserUpdateInfoRequest implements Serializable {
      * 用户昵称
      */
     @ApiModelProperty(value = "用户昵称")
-    @CheckParam(required = NumberConstant.FALSE_VALUE, regex = UserRegexEnums.USERNAME, regexErrorMsg = "用户名只能包含字母、数字或汉字")
+    @CheckParam(alias = "用户昵称", required = NumberConstant.FALSE_VALUE, regex = UserRegexEnums.USERNAME)
     private String userName;
 
     /**
      * 用户头像
      */
     @ApiModelProperty(value = "用户头像")
-    @CheckParam(required = NumberConstant.FALSE_VALUE)
+    @CheckParam(alias = "用户头像", required = NumberConstant.FALSE_VALUE)
     private String avatarUrl;
 
     /**
      * 用户邮箱
      */
     @ApiModelProperty(value = "用户邮箱")
-    @CheckParam(required = NumberConstant.FALSE_VALUE, regex = UserRegexEnums.EMAIL, regexErrorMsg = "邮箱格式不正确")
+    @CheckParam(alias = "用户邮箱", required = NumberConstant.FALSE_VALUE, regex = UserRegexEnums.EMAIL)
     private String userEmail;
 
     /**
      * 用户性别
      */
     @ApiModelProperty(value = "用户性别")
-    @CheckParam(required = NumberConstant.FALSE_VALUE,regex = UserRegexEnums.USER_GENDER, regexErrorMsg = "性别参数错误,请输入对应的性别,0:女,1:男,2:未知")
+    @CheckParam(alias = "用户性别", required = NumberConstant.FALSE_VALUE, regex = UserRegexEnums.USER_GENDER)
     private Integer userGender;
 
     /**
      * 用户密码
      */
     @ApiModelProperty(value = "密码", required = true)
-    @CheckParam(required = NumberConstant.FALSE_VALUE, minLength = 6, maxLength = 18, lenghtErrorMsg = "密码长度必须在6-18之间", regex = UserRegexEnums.PASSWORD)
+    @CheckParam(alias = "密码", required = NumberConstant.FALSE_VALUE, minLength = 6, maxLength = 18, regex = UserRegexEnums.PASSWORD)
     private String userPassword;
 
 }

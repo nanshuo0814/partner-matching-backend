@@ -36,19 +36,9 @@ public interface UserConstant {
     String BAN_ROLE = "ban";
 
     /**
-     * 默认用户账号密码
-     */
-    String DEFAULT_USER_PASSWORD = "user123";
-
-    /**
      * 默认用户昵称
      */
     String DEFAULT_USER_NAME = "user";
-
-    /**
-     * 默认用户简介
-     */
-    String DEFAULT_USER_PROFILE = "本人很懒,什么也没有留下ya";
 
     /**
      * 默认用户头像
@@ -60,4 +50,8 @@ public interface UserConstant {
      */
     Integer DEFAULT_USER_GENDER = 2;
 
+    /**
+     * 将用户保存到缓存时间
+     */
+    Integer SAVE_USER_TO_CACHE_TIME = 1;
 }

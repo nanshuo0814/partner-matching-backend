@@ -1,184 +1,678 @@
-2024-03-18 14:09:41.767 [main] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 3268 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
-2024-03-18 14:09:41.772 [main] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
-2024-03-18 14:09:43.184 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-03-18 14:09:43.189 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-03-18 14:09:43.237 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-2024-03-18 14:09:44.832 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-03-18 14:09:44.856 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
-2024-03-18 14:09:44.858 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2024-03-18 14:09:44.858 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-03-18 14:09:45.006 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2024-03-18 14:09:45.006 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3166 ms
-2024-03-18 14:09:53.429 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
-2024-03-18 14:09:53.444 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
-2024-03-18 14:09:54.335 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2024-03-18 14:09:54.348 [main] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 13.288 seconds (JVM running for 15.217)
-2024-03-18 14:09:54.352 [main] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
-2024-03-18 20:07:06.744 [main] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 2480 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
-2024-03-18 20:07:06.745 [main] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
-2024-03-18 20:07:07.819 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-03-18 20:07:07.823 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-03-18 20:07:07.858 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
-2024-03-18 20:07:08.876 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-03-18 20:07:08.886 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
-2024-03-18 20:07:08.887 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2024-03-18 20:07:08.887 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-03-18 20:07:08.996 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2024-03-18 20:07:08.996 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2153 ms
-2024-03-18 20:07:13.711 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
-2024-03-18 20:07:13.721 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
-2024-03-18 20:07:14.084 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2024-03-18 20:07:14.094 [main] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 8.032 seconds (JVM running for 9.774)
-2024-03-18 20:07:14.099 [main] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
-2024-03-18 20:07:18.463 [http-nio-0.0.0.0-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
+2024-03-19 14:36:28.964 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 7432 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 14:36:28.970 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 14:36:29.111 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-19 14:36:29.111 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-19 14:36:30.446 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 14:36:30.450 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 14:36:30.489 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-03-19 14:36:31.712 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 14:36:31.724 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 14:36:31.724 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 14:36:31.725 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 14:36:31.817 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 14:36:31.817 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2703 ms
+2024-03-19 14:36:36.849 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 14:36:40.419 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 14:36:40.437 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 14:36:41.133 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 14:36:41.146 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 13.003 seconds (JVM running for 15.687)
+2024-03-19 14:36:41.152 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 14:50:06.446 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 17404 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 14:50:06.448 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 14:50:06.555 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-19 14:50:06.556 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-19 14:50:07.643 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 14:50:07.647 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 14:50:07.674 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2024-03-19 14:50:08.672 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 14:50:08.681 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 14:50:08.682 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 14:50:08.682 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 14:50:08.763 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 14:50:08.764 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2207 ms
+2024-03-19 14:50:11.753 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 14:50:13.587 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 14:50:13.599 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 14:50:14.121 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 14:50:14.133 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 8.389 seconds (JVM running for 10.586)
+2024-03-19 14:50:14.137 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 14:59:12.621 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 12852 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 14:59:12.623 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 14:59:12.725 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-19 14:59:12.726 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-19 14:59:13.686 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 14:59:13.690 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 14:59:13.720 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-03-19 14:59:14.703 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 14:59:14.711 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 14:59:14.712 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 14:59:14.712 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 14:59:14.781 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 14:59:14.781 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2054 ms
+2024-03-19 14:59:17.487 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 14:59:19.474 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 14:59:19.485 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 14:59:20.041 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 14:59:20.051 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 7.942 seconds (JVM running for 9.617)
+2024-03-19 14:59:20.056 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 15:01:53.550 [main] INFO  com.nanshuo.springboot.MainApplicationTest - Starting MainApplicationTest using Java 1.8.0_402 on nanshuo with PID 17336 (started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 15:01:53.552 [main] INFO  com.nanshuo.springboot.MainApplicationTest - The following 1 profile is active: "dev"
+2024-03-19 15:01:54.848 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 15:01:54.852 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 15:01:54.890 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-03-19 15:02:05.989 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 15:02:06.004 [main] INFO  com.nanshuo.springboot.MainApplicationTest - Started MainApplicationTest in 13.058 seconds (JVM running for 14.657)
+2024-03-19 15:03:19.920 [http-nio-0.0.0.0-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
  Note: further occurrences of this error will be logged at DEBUG level.
-2024-03-18 20:07:18.469 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-03-18 20:07:18.469 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-03-18 20:07:18.473 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
-2024-03-18 20:07:18.532 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.springboot.aop.LogInterceptor - request start，id: acaa4d8e-38f3-4e14-b427-8e4c9474f1e0, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@3e73c8ce]
-2024-03-18 20:08:05.012 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.springboot.aop.LogInterceptor - request start，id: 8f287371-56e3-444a-a983-1252a7a0ebcf, path: /api/user/logout, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@2b088bc2]
-2024-03-18 20:22:01.119 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 10284 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
-2024-03-18 20:22:01.121 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
-2024-03-18 20:22:01.298 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-03-18 20:22:01.298 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-03-18 20:22:02.425 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-03-18 20:22:02.427 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-03-18 20:22:02.455 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
-2024-03-18 20:22:03.900 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-03-18 20:22:03.912 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
-2024-03-18 20:22:03.913 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2024-03-18 20:22:03.914 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-03-18 20:22:03.994 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2024-03-18 20:22:03.994 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2695 ms
-2024-03-18 20:22:06.817 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2024-03-18 20:22:06.828 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+2024-03-19 15:03:19.920 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19 15:03:19.920 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-19 15:03:19.920 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-03-19 15:03:25.768 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.springboot.aop.LogInterceptor - request start，id: a4674cc3-0788-4bdb-8f8f-0a1accf686f5, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@693330da]
+2024-03-19 15:14:41.128 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 3 deletions, 0 modifications)
+2024-03-19 15:14:41.782 [Thread-15] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 15:14:41.782 [Thread-15] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-19 15:14:41.784 [Thread-15] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-19 15:14:41.789 [Thread-15] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 15:14:41.794 [Thread-15] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 15:14:42.282 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 12852 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 15:14:42.283 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 15:14:42.790 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 15:14:42.791 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 15:14:42.800 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-03-19 15:14:43.100 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 15:14:43.101 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 15:14:43.102 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 15:14:43.102 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 15:14:43.122 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 15:14:43.123 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 837 ms
+2024-03-19 15:14:43.254 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-19 15:14:43.262 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-03-18 20:23:34.236 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 15408 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
-2024-03-18 20:23:34.238 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
-2024-03-18 20:23:34.335 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-03-18 20:23:34.335 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-03-18 20:23:35.480 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-03-18 20:23:35.483 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-03-18 20:23:35.525 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
-2024-03-18 20:23:36.639 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-03-18 20:23:36.655 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
-2024-03-18 20:23:36.656 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2024-03-18 20:23:36.656 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-03-18 20:23:36.735 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2024-03-18 20:23:36.735 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2399 ms
-2024-03-18 20:23:39.673 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-03-18 20:23:41.785 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
-2024-03-18 20:23:41.794 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
-2024-03-18 20:23:42.188 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2024-03-18 20:23:42.199 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 8.769 seconds (JVM running for 11.529)
-2024-03-18 20:23:42.204 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
-2024-03-18 20:23:50.060 [http-nio-0.0.0.0-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
+2024-03-19 15:14:50.010 [main] INFO  com.nanshuo.springboot.MainApplicationTest - Starting MainApplicationTest using Java 1.8.0_402 on nanshuo with PID 17284 (started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 15:14:50.013 [main] INFO  com.nanshuo.springboot.MainApplicationTest - The following 1 profile is active: "dev"
+2024-03-19 15:14:52.151 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 15:14:52.164 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 15:14:52.225 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
+2024-03-19 15:14:54.268 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 9836 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 15:14:54.270 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 15:14:54.407 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-19 15:14:54.407 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-19 15:14:55.952 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 15:14:55.955 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 15:14:55.992 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-03-19 15:14:57.221 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 15:14:57.238 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 15:14:57.240 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 15:14:57.240 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 15:14:57.369 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 15:14:57.369 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2960 ms
+2024-03-19 15:15:02.233 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 15:15:04.653 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 15:15:04.671 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 15:15:05.307 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 15:15:05.322 [main] INFO  com.nanshuo.springboot.MainApplicationTest - Started MainApplicationTest in 16.383 seconds (JVM running for 19.948)
+2024-03-19 15:15:05.491 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 15:15:05.506 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 12.401 seconds (JVM running for 15.333)
+2024-03-19 15:15:05.510 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 15:15:09.347 [http-nio-0.0.0.0-8080-exec-2] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
  Note: further occurrences of this error will be logged at DEBUG level.
-2024-03-18 20:23:50.069 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-03-18 20:23:50.069 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-03-18 20:23:50.070 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-03-18 20:24:26.687 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.springboot.aop.LogInterceptor - request start，id: 4472f627-faf5-4013-8c99-a89979168813, path: /api/user/get/login, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@59eac5e3]
-2024-03-18 20:24:47.587 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.springboot.aop.LogInterceptor - request start，id: c4d58902-b1d7-484b-b9f6-b754dc638e41, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@6b61d676]
-2024-03-18 20:25:53.997 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 17552 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
-2024-03-18 20:25:53.998 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
-2024-03-18 20:25:54.072 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-03-18 20:25:54.072 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-03-18 20:25:54.895 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-03-18 20:25:54.897 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-03-18 20:25:54.924 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
-2024-03-18 20:25:55.720 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-03-18 20:25:55.728 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
-2024-03-18 20:25:55.728 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2024-03-18 20:25:55.729 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-03-18 20:25:55.783 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2024-03-18 20:25:55.783 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1710 ms
-2024-03-18 20:25:58.385 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-03-18 20:25:59.960 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
-2024-03-18 20:25:59.969 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
-2024-03-18 20:26:00.336 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2024-03-18 20:26:00.345 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 6.825 seconds (JVM running for 8.399)
-2024-03-18 20:26:00.348 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
-2024-03-18 20:26:04.053 [http-nio-0.0.0.0-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
+2024-03-19 15:15:09.357 [http-nio-0.0.0.0-8080-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19 15:15:09.357 [http-nio-0.0.0.0-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-19 15:15:09.360 [http-nio-0.0.0.0-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-03-19 19:30:22.771 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 2564 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 19:30:22.774 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 19:30:22.916 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-19 19:30:22.917 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-19 19:30:24.407 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 19:30:24.411 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 19:30:24.460 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2024-03-19 19:30:25.997 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 19:30:26.011 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 19:30:26.016 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 19:30:26.017 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 19:30:26.131 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 19:30:26.131 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3213 ms
+2024-03-19 19:30:31.685 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 19:30:34.475 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 19:30:35.085 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 19:30:35.097 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 13.136 seconds (JVM running for 15.225)
+2024-03-19 19:30:35.105 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 19:30:43.098 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 6860 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 19:30:43.100 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 19:30:43.242 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-19 19:30:43.243 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-19 19:30:45.007 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 19:30:45.011 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 19:30:45.063 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2024-03-19 19:30:46.614 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 19:30:46.628 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 19:30:46.630 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 19:30:46.630 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 19:30:46.744 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 19:30:46.745 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3501 ms
+2024-03-19 19:30:51.158 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 19:30:53.824 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 19:30:53.840 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 19:30:54.803 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 19:30:54.834 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 12.591 seconds (JVM running for 15.409)
+2024-03-19 19:30:54.843 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 19:30:57.456 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-03-19 19:30:58.669 [Thread-22] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 19:30:58.670 [Thread-22] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-19 19:30:58.684 [Thread-22] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 19:30:58.690 [Thread-22] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 19:30:59.183 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 6860 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 19:30:59.184 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 19:30:59.636 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 19:30:59.636 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 19:30:59.646 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2024-03-19 19:30:59.909 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 19:30:59.910 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 19:30:59.911 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 19:30:59.911 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 19:30:59.928 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 19:30:59.929 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 741 ms
+2024-03-19 19:31:02.062 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 19:31:02.517 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 19:31:02.520 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 19:31:02.629 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 19:31:02.632 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 3.521 seconds (JVM running for 23.206)
+2024-03-19 19:31:02.636 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-19 19:31:02.636 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 19:31:03.921 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-03-19 19:31:04.520 [Thread-32] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 19:31:04.521 [Thread-32] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-19 19:31:04.527 [Thread-32] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 19:31:04.530 [Thread-32] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 19:31:04.858 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 6860 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 19:31:04.859 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 19:31:05.164 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 19:31:05.164 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 19:31:05.173 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-03-19 19:31:05.386 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 19:31:05.387 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 19:31:05.387 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 19:31:05.387 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 19:31:05.402 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 19:31:05.404 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 544 ms
+2024-03-19 19:31:06.899 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 19:31:07.325 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 19:31:07.328 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 19:31:07.430 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 19:31:07.431 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 2.615 seconds (JVM running for 28.006)
+2024-03-19 19:31:07.433 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-19 19:31:07.433 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 19:59:24.704 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 2284 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 19:59:24.706 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 19:59:24.761 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-19 19:59:24.762 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-19 19:59:25.565 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 19:59:25.567 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 19:59:25.586 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-03-19 19:59:26.420 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 19:59:26.429 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 19:59:26.429 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 19:59:26.430 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 19:59:26.497 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 19:59:26.498 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1736 ms
+2024-03-19 19:59:29.087 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 19:59:30.676 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 19:59:30.685 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 19:59:31.130 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 19:59:31.140 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 6.859 seconds (JVM running for 7.938)
+2024-03-19 19:59:31.144 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 19:59:46.065 [http-nio-0.0.0.0-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
  Note: further occurrences of this error will be logged at DEBUG level.
-2024-03-18 20:26:04.060 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-03-18 20:26:04.060 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-03-18 20:26:04.064 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
-2024-03-18 21:03:42.348 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 18456 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
-2024-03-18 21:03:42.350 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
-2024-03-18 21:03:42.415 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-03-18 21:03:42.415 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-03-18 21:03:43.466 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-03-18 21:03:43.470 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-03-18 21:03:43.498 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-2024-03-18 21:03:44.516 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-03-18 21:03:44.525 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
-2024-03-18 21:03:44.526 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2024-03-18 21:03:44.526 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-03-18 21:03:44.595 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2024-03-18 21:03:44.595 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2147 ms
-2024-03-18 21:03:48.003 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-03-18 21:03:50.103 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
-2024-03-18 21:03:50.115 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
-2024-03-18 21:03:50.551 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2024-03-18 21:03:50.559 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 8.805 seconds (JVM running for 10.965)
-2024-03-18 21:03:50.563 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
-2024-03-18 21:04:17.903 [http-nio-0.0.0.0-8080-exec-2] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
+2024-03-19 19:59:46.071 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19 19:59:46.071 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-19 19:59:46.074 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-03-19 19:59:51.806 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.springboot.aop.LogInterceptor - request start，id: 5c68946a-6057-48bc-9ecd-fb7921353f30, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@1d2a3773]
+2024-03-19 20:00:10.349 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.springboot.aop.LogInterceptor - request start，id: 63078575-9ace-49c8-90fc-e074915cfe35, path: /api/user/logout, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@6402c066]
+2024-03-19 20:02:34.028 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 13360 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 20:02:34.029 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 20:02:34.100 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-19 20:02:34.101 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-19 20:02:35.050 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 20:02:35.053 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 20:02:35.087 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-03-19 20:02:36.209 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 20:02:36.221 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:02:36.222 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 20:02:36.223 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 20:02:36.311 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 20:02:36.312 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2210 ms
+2024-03-19 20:02:39.987 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 20:02:42.504 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:02:42.517 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 20:02:43.032 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 20:02:43.044 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 9.556 seconds (JVM running for 10.944)
+2024-03-19 20:02:43.048 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 20:02:50.326 [http-nio-0.0.0.0-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
  Note: further occurrences of this error will be logged at DEBUG level.
-2024-03-18 21:04:17.909 [http-nio-0.0.0.0-8080-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-03-18 21:04:17.909 [http-nio-0.0.0.0-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-03-18 21:04:17.913 [http-nio-0.0.0.0-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
-2024-03-18 21:04:22.799 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.springboot.aop.LogInterceptor - request start，id: 4bd6edd4-5abc-455f-b08a-b33d13dc1444, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@33c15fbe]
-2024-03-18 22:15:45.754 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 12644 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
-2024-03-18 22:15:45.755 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
-2024-03-18 22:15:45.800 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-03-18 22:15:45.801 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-03-18 22:15:46.427 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-03-18 22:15:46.429 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-03-18 22:15:46.446 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
-2024-03-18 22:15:47.096 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-03-18 22:15:47.103 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
-2024-03-18 22:15:47.103 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2024-03-18 22:15:47.103 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-03-18 22:15:47.150 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2024-03-18 22:15:47.151 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1349 ms
-2024-03-18 22:15:49.136 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-03-18 22:15:50.436 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
-2024-03-18 22:15:50.443 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
-2024-03-18 22:15:50.802 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2024-03-18 22:15:50.809 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 5.424 seconds (JVM running for 6.49)
-2024-03-18 22:15:50.811 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
-2024-03-18 22:15:55.685 [http-nio-0.0.0.0-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
+2024-03-19 20:02:50.331 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19 20:02:50.331 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-19 20:02:50.335 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-03-19 20:04:25.875 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-19 20:04:26.295 [Thread-18] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:04:26.295 [Thread-18] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-19 20:04:26.297 [Thread-18] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-19 20:04:26.303 [Thread-18] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:04:26.306 [Thread-18] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:04:26.626 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 13360 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 20:04:26.626 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 20:04:26.886 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 20:04:26.887 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 20:04:26.893 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-03-19 20:04:27.055 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 20:04:27.055 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:04:27.056 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 20:04:27.056 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 20:04:27.066 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 20:04:27.066 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 438 ms
+2024-03-19 20:04:28.237 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 20:04:28.440 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:04:28.442 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 20:04:28.519 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 20:04:28.520 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 1.933 seconds (JVM running for 116.421)
+2024-03-19 20:04:28.522 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-19 20:04:28.523 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 20:04:28.536 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19 20:04:28.537 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-19 20:04:28.539 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-03-19 20:05:07.994 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-19 20:05:08.397 [Thread-28] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:05:08.397 [Thread-28] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-19 20:05:08.399 [Thread-28] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-19 20:05:08.404 [Thread-28] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:05:08.407 [Thread-28] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:05:08.716 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 13360 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 20:05:08.716 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 20:05:08.968 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 20:05:08.969 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 20:05:08.974 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2024-03-19 20:05:09.122 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 20:05:09.123 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:05:09.123 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 20:05:09.123 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 20:05:09.132 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 20:05:09.133 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 415 ms
+2024-03-19 20:05:10.069 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 20:05:10.324 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:05:10.326 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 20:05:10.388 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 20:05:10.390 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 1.712 seconds (JVM running for 158.29)
+2024-03-19 20:05:10.391 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-19 20:05:10.391 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 20:05:41.924 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19 20:05:41.925 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-19 20:05:41.927 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-03-19 20:06:21.913 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-03-19 20:06:22.544 [Thread-32] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:06:22.545 [Thread-32] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-19 20:06:22.546 [Thread-32] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-19 20:06:22.552 [Thread-32] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:06:22.556 [Thread-32] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:06:22.949 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 13360 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 20:06:22.949 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 20:06:23.339 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 20:06:23.339 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 20:06:23.348 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-03-19 20:06:23.591 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 20:06:23.591 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:06:23.592 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 20:06:23.592 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 20:06:23.607 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 20:06:23.607 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 655 ms
+2024-03-19 20:06:24.980 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 20:06:25.238 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:06:25.240 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 20:06:25.256 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 20:06:25.257 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 2.36 seconds (JVM running for 233.157)
+2024-03-19 20:06:25.258 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-19 20:06:25.259 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 20:06:26.642 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-03-19 20:06:27.076 [Thread-36] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:06:27.076 [Thread-36] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-19 20:06:27.081 [Thread-36] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:06:27.083 [Thread-36] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:06:27.380 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 13360 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 20:06:27.380 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 20:06:27.583 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 20:06:27.583 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 20:06:27.588 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-03-19 20:06:27.717 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 20:06:27.718 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:06:27.718 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 20:06:27.718 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 20:06:27.727 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 20:06:27.727 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 345 ms
+2024-03-19 20:06:28.655 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 20:06:28.861 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:06:28.864 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 20:06:28.923 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 20:06:28.924 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 1.578 seconds (JVM running for 236.825)
+2024-03-19 20:06:28.926 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-19 20:06:28.926 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 20:06:31.521 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19 20:06:31.522 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-19 20:06:31.524 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-03-19 20:15:09.618 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 15260 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 20:15:09.620 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 20:15:09.726 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-19 20:15:09.727 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-19 20:15:10.883 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 20:15:10.887 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 20:15:10.928 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2024-03-19 20:15:12.086 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 20:15:12.098 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:15:12.098 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 20:15:12.099 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 20:15:12.170 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 20:15:12.170 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2442 ms
+2024-03-19 20:15:14.733 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 20:15:16.348 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:15:16.359 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 20:15:16.807 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 20:15:16.816 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 7.858 seconds (JVM running for 9.483)
+2024-03-19 20:15:16.820 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 20:15:21.873 [http-nio-0.0.0.0-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
  Note: further occurrences of this error will be logged at DEBUG level.
-2024-03-18 22:15:55.690 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-03-18 22:15:55.690 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-03-18 22:15:55.693 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2024-03-18 22:16:19.666 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.springboot.aop.LogInterceptor - request start，id: 14fe80a0-d7de-4b64-90dc-f73f9f07b526, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@2e5fbd13]
-2024-03-18 22:18:55.435 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.springboot.aop.LogInterceptor - request start，id: cbc20764-da96-45e5-bdf4-0ce83b1172d9, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@3ecb8783]
-2024-03-18 22:20:05.173 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.springboot.aop.LogInterceptor - request start，id: 046a25ce-9069-4799-814d-776deeca9d3b, path: /api/user/current, ip: 127.0.0.1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@50b29ec0]
-2024-03-18 22:21:35.129 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 20108 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
-2024-03-18 22:21:35.131 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
-2024-03-18 22:21:35.237 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-03-18 22:21:35.238 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-03-18 22:21:36.470 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-03-18 22:21:36.474 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-03-18 22:21:36.507 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
-2024-03-18 22:21:37.733 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-03-18 22:21:37.746 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
-2024-03-18 22:21:37.746 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2024-03-18 22:21:37.746 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-03-18 22:21:37.833 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2024-03-18 22:21:37.833 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2594 ms
-2024-03-18 22:21:40.602 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-03-18 22:21:42.295 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
-2024-03-18 22:21:42.311 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
-2024-03-18 22:21:42.786 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2024-03-18 22:21:42.794 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 8.513 seconds (JVM running for 10.995)
-2024-03-18 22:21:42.798 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
-2024-03-18 22:21:49.109 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-03-18 22:21:49.110 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-03-18 22:21:49.112 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2024-03-18 22:21:49.163 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.springboot.aop.LogInterceptor - request start，id: 5b7a7bb5-fbcb-4489-8157-97561f54d36b, path: /api/user/current, ip: 127.0.0.1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@58b2a9d8]
-2024-03-18 22:21:55.947 [http-nio-0.0.0.0-8080-exec-2] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
+2024-03-19 20:15:21.882 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19 20:15:21.883 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-19 20:15:21.886 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-03-19 20:19:32.881 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-03-19 20:19:33.413 [Thread-14] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:33.414 [Thread-14] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-19 20:19:33.417 [Thread-14] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-19 20:19:33.428 [Thread-14] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:33.433 [Thread-14] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:33.913 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 15260 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 20:19:33.913 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 20:19:34.430 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 20:19:34.430 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 20:19:34.442 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2024-03-19 20:19:34.635 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 20:19:34.636 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:34.637 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 20:19:34.637 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 20:19:34.651 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 20:19:34.651 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 734 ms
+2024-03-19 20:19:36.134 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 20:19:36.341 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:36.343 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 20:19:36.360 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 20:19:36.362 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 2.519 seconds (JVM running for 269.029)
+2024-03-19 20:19:36.364 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-19 20:19:36.364 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 20:19:37.749 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-03-19 20:19:38.138 [Thread-25] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:38.139 [Thread-25] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-19 20:19:38.146 [Thread-25] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:38.149 [Thread-25] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:38.425 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 15260 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 20:19:38.425 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 20:19:38.642 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 20:19:38.642 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 20:19:38.647 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-03-19 20:19:38.760 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 20:19:38.761 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:38.761 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 20:19:38.761 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 20:19:38.771 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 20:19:38.771 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 344 ms
+2024-03-19 20:19:39.792 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 20:19:40.048 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:40.050 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 20:19:40.114 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 20:19:40.115 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 1.721 seconds (JVM running for 272.782)
+2024-03-19 20:19:40.116 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-19 20:19:40.116 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 20:19:48.286 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19 20:19:48.287 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-19 20:19:48.291 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-03-19 20:19:50.731 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-03-19 20:19:51.301 [Thread-29] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:51.301 [Thread-29] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-19 20:19:51.302 [Thread-29] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-19 20:19:51.308 [Thread-29] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:51.310 [Thread-29] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:51.650 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 15260 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 20:19:51.651 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 20:19:52.122 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 20:19:52.122 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 20:19:52.131 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-03-19 20:19:52.351 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 20:19:52.352 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:52.353 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 20:19:52.353 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 20:19:52.365 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 20:19:52.365 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 712 ms
+2024-03-19 20:19:53.790 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 20:19:54.115 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:54.117 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 20:19:54.139 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 20:19:54.140 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 2.53 seconds (JVM running for 286.807)
+2024-03-19 20:19:54.142 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-19 20:19:54.142 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 20:19:55.544 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-03-19 20:19:56.152 [Thread-33] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:56.152 [Thread-33] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-19 20:19:56.159 [Thread-33] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:56.162 [Thread-33] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:56.528 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 15260 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 20:19:56.529 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 20:19:56.873 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 20:19:56.874 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 20:19:56.880 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-03-19 20:19:57.036 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 20:19:57.036 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:57.037 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 20:19:57.037 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 20:19:57.049 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 20:19:57.049 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 517 ms
+2024-03-19 20:19:58.158 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 20:19:58.389 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:19:58.391 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 20:19:58.448 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 20:19:58.450 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 1.962 seconds (JVM running for 291.117)
+2024-03-19 20:19:58.451 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-19 20:19:58.451 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 20:20:03.312 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19 20:20:03.313 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-19 20:20:03.314 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-03-19 20:20:03.320 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.springboot.aop.LogInterceptor - request start，id: 97a5fc8a-de5b-4e46-949d-744b7b4edfa7, path: /api/user/search/tags, ip: 0:0:0:0:0:0:0:1, params: []
+2024-03-19 20:37:09.604 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 18648 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 20:37:09.606 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 20:37:09.703 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-19 20:37:09.704 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-19 20:37:10.694 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 20:37:10.697 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 20:37:10.723 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2024-03-19 20:37:11.641 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 20:37:11.650 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:37:11.651 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 20:37:11.651 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 20:37:11.712 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 20:37:11.712 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2007 ms
+2024-03-19 20:37:14.929 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 20:37:16.509 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:37:16.518 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 20:37:17.045 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 20:37:17.057 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 8.252 seconds (JVM running for 10.207)
+2024-03-19 20:37:17.062 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 20:37:18.929 [http-nio-0.0.0.0-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
  Note: further occurrences of this error will be logged at DEBUG level.
-2024-03-18 22:22:04.976 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.springboot.aop.LogInterceptor - request start，id: 53499de4-5a70-4ac1-822a-5b2d5bff6ca0, path: /api/user/current, ip: 127.0.0.1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@223a81a5]
+2024-03-19 20:37:18.936 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19 20:37:18.936 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-19 20:37:18.939 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-03-19 20:37:54.595 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-03-19 20:37:55.544 [Thread-16] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:37:55.545 [Thread-16] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-19 20:37:55.546 [Thread-16] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-19 20:37:55.555 [Thread-16] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:37:55.560 [Thread-16] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:37:55.999 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 18648 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 20:37:55.999 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 20:37:56.472 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 20:37:56.473 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 20:37:56.484 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-03-19 20:37:56.851 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 20:37:56.852 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:37:56.852 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 20:37:56.852 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 20:37:56.871 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 20:37:56.871 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 869 ms
+2024-03-19 20:37:59.074 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 20:37:59.409 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:37:59.412 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 20:37:59.440 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 20:37:59.442 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 3.506 seconds (JVM running for 52.592)
+2024-03-19 20:37:59.444 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-19 20:37:59.444 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 20:38:00.823 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-03-19 20:38:01.395 [Thread-28] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:38:01.395 [Thread-28] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-19 20:38:01.401 [Thread-28] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:38:01.403 [Thread-28] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:38:01.726 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 18648 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 20:38:01.726 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 20:38:02.144 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 20:38:02.144 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 20:38:02.150 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-03-19 20:38:02.379 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 20:38:02.380 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:38:02.380 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 20:38:02.380 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 20:38:02.394 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 20:38:02.394 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 665 ms
+2024-03-19 20:38:03.842 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 20:38:04.087 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 20:38:04.089 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 20:38:04.153 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 20:38:04.154 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 2.474 seconds (JVM running for 57.304)
+2024-03-19 20:38:04.155 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-19 20:38:04.156 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 20:38:07.200 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19 20:38:07.200 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-19 20:38:07.200 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-03-19 20:38:07.210 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.springboot.aop.LogInterceptor - request start，id: 348bc700-ce96-4285-838f-ddabec845823, path: /api/user/search/tags, ip: 0:0:0:0:0:0:0:1, params: [{}]
+2024-03-19 21:09:06.714 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-03-19 21:09:07.200 [Thread-32] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:09:07.200 [Thread-32] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-19 21:09:07.203 [Thread-32] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-19 21:09:07.213 [Thread-32] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:09:07.216 [Thread-32] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:09:07.630 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 18648 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 21:09:07.631 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 21:09:07.920 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 21:09:07.921 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 21:09:07.928 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-03-19 21:09:08.094 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 21:09:08.094 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:09:08.094 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 21:09:08.094 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 21:09:08.106 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 21:09:08.106 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 473 ms
+2024-03-19 21:09:09.413 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 21:09:09.710 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:09:09.712 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 21:09:09.728 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 21:09:09.729 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 2.149 seconds (JVM running for 1922.88)
+2024-03-19 21:09:09.731 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-19 21:09:09.731 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 21:09:11.115 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-03-19 21:09:11.499 [Thread-36] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:09:11.499 [Thread-36] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-19 21:09:11.506 [Thread-36] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:09:11.508 [Thread-36] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:09:11.906 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 18648 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 21:09:11.906 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 21:09:12.110 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 21:09:12.110 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 21:09:12.115 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-03-19 21:09:12.217 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 21:09:12.217 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:09:12.217 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 21:09:12.217 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 21:09:12.227 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 21:09:12.227 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 319 ms
+2024-03-19 21:09:13.112 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 21:09:13.316 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:09:13.318 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 21:09:13.373 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 21:09:13.374 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 1.495 seconds (JVM running for 1926.524)
+2024-03-19 21:09:13.375 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-19 21:09:13.375 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 21:14:19.209 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 18428 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 21:14:19.211 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 21:14:19.378 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-19 21:14:19.379 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-19 21:14:25.184 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 21:14:25.196 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 21:14:25.330 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 0 Redis repository interfaces.
+2024-03-19 21:14:29.179 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 21:14:29.200 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:14:29.202 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 21:14:29.202 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 21:14:29.408 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 21:14:29.409 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 10029 ms
+2024-03-19 21:14:33.930 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 21:14:36.172 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:14:36.185 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 21:14:36.725 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 21:14:36.736 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 18.213 seconds (JVM running for 19.523)
+2024-03-19 21:14:36.740 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 21:14:51.383 [http-nio-0.0.0.0-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-03-19 21:14:51.393 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19 21:14:51.393 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-19 21:14:51.395 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-03-19 21:14:51.464 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.springboot.aop.LogInterceptor - request start，id: 77ca4ecb-2d50-4eb3-9739-5ebb19a04b8a, path: /api/user/search/tags, ip: 0:0:0:0:0:0:0:1, params: []
+2024-03-19 21:16:09.081 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-03-19 21:16:09.950 [Thread-23] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:16:09.951 [Thread-23] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-19 21:16:09.955 [Thread-23] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-19 21:16:09.968 [Thread-23] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:16:09.973 [Thread-23] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:16:10.428 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 18428 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 21:16:10.429 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 21:16:10.914 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 21:16:10.914 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 21:16:10.923 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-03-19 21:16:11.143 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 21:16:11.144 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:16:11.144 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 21:16:11.145 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 21:16:11.162 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 21:16:11.162 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 729 ms
+2024-03-19 21:16:13.209 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 21:16:13.467 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:16:13.470 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 21:16:13.580 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 21:16:13.581 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 3.23 seconds (JVM running for 116.367)
+2024-03-19 21:16:13.584 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-19 21:16:13.584 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！
+2024-03-19 21:16:14.877 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-03-19 21:16:15.499 [Thread-35] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:16:15.499 [Thread-35] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-19 21:16:15.505 [Thread-35] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:16:15.508 [Thread-35] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:16:15.788 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 18428 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-19 21:16:15.790 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - The following 1 profile is active: "dev"
+2024-03-19 21:16:16.028 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-19 21:16:16.029 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-19 21:16:16.033 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-03-19 21:16:16.150 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-19 21:16:16.151 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:16:16.151 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-19 21:16:16.151 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-19 21:16:16.162 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-19 21:16:16.162 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 370 ms
+2024-03-19 21:16:17.288 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-19 21:16:17.508 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-19 21:16:17.510 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-19 21:16:17.594 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-19 21:16:17.595 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Started MainApplication in 1.841 seconds (JVM running for 120.381)
+2024-03-19 21:16:17.597 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-19 21:16:17.598 [restartedMain] INFO  com.nanshuo.springboot.MainApplication - Project started successfully！

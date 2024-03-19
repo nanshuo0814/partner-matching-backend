@@ -25,14 +25,14 @@ public class UserLoginRequest implements Serializable {
      * 账号
      */
     @ApiModelProperty(value = "账号", required = true)
-    @CheckParam(nullErrorMsg = "账号不能为空", minLength = 3, maxLength = 16, lenghtErrorMsg = "账号长度必须在3-16之间", regex = UserRegexEnums.ACCOUNT)
+    @CheckParam(alias = "账号", minLength = 3, maxLength = 16, regex = UserRegexEnums.ACCOUNT)
     private String userAccount;
 
     /**
      * 用户密码
      */
     @ApiModelProperty(value = "密码", required = true)
-    @CheckParam(nullErrorMsg = "密码不能为空", minLength = 6, maxLength = 18, lenghtErrorMsg = "密码长度必须在6-18之间",regex = UserRegexEnums.PASSWORD)
+    @CheckParam(alias = "密码", minLength = 6, maxLength = 18, regex = UserRegexEnums.PASSWORD)
     private String userPassword;
 
 }

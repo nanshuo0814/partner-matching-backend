@@ -55,11 +55,6 @@ public class User implements Serializable {
     private String email;
 
     /**
-     * 状态 0 - 正常
-     */
-    private Integer userStatus;
-
-    /**
      * 创建时间
      */
     private Date createTime;
@@ -76,9 +71,9 @@ public class User implements Serializable {
     private Integer isDelete;
 
     /**
-     * 用户角色 0 - 普通用户 1 - 管理员
+     * 用户角色 user/admin/ban
      */
-    private Integer userRole;
+    private String userRole;
 
     /**
      * 星球编号
