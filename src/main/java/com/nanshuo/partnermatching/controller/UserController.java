@@ -1,32 +1,35 @@
-package com.nanshuo.springboot.controller;
+package com.nanshuo.partnermatching.controller;
 
-import com.nanshuo.springboot.annotation.Check;
-import com.nanshuo.springboot.annotation.CheckParam;
-import com.nanshuo.springboot.common.BaseResponse;
-import com.nanshuo.springboot.common.ErrorCode;
-import com.nanshuo.springboot.common.ResultUtils;
-import com.nanshuo.springboot.constant.NumberConstant;
-import com.nanshuo.springboot.constant.UserConstant;
-import com.nanshuo.springboot.exception.BusinessException;
-import com.nanshuo.springboot.exception.ThrowUtils;
-import com.nanshuo.springboot.model.domain.User;
-import com.nanshuo.springboot.model.request.user.UserLoginRequest;
-import com.nanshuo.springboot.model.request.user.UserRegisterRequest;
-import com.nanshuo.springboot.model.request.user.UserUpdateInfoRequest;
-import com.nanshuo.springboot.model.vo.user.UserLoginVO;
-import com.nanshuo.springboot.model.vo.user.UserSafetyVO;
-import com.nanshuo.springboot.service.UserService;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.nanshuo.partnermatching.annotation.Check;
+import com.nanshuo.partnermatching.annotation.CheckAuth;
+import com.nanshuo.partnermatching.common.BaseResponse;
+import com.nanshuo.partnermatching.common.ErrorCode;
+import com.nanshuo.partnermatching.common.ResultUtils;
+import com.nanshuo.partnermatching.constant.UserConstant;
+import com.nanshuo.partnermatching.exception.BusinessException;
+import com.nanshuo.partnermatching.exception.ThrowUtils;
+import com.nanshuo.partnermatching.model.domain.User;
+import com.nanshuo.partnermatching.model.request.user.UserLoginRequest;
+import com.nanshuo.partnermatching.model.request.user.UserRegisterRequest;
+import com.nanshuo.partnermatching.model.request.user.UserUpdateInfoRequest;
+import com.nanshuo.partnermatching.model.vo.user.UserLoginVO;
+import com.nanshuo.partnermatching.model.vo.user.UserSafetyVO;
+import com.nanshuo.partnermatching.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
+import java.util.stream.Collectors;
 
-import static com.nanshuo.springboot.constant.UserConstant.USER_LOGIN_STATE;
+import static com.nanshuo.partnermatching.constant.UserConstant.USER_LOGIN_STATE;
 
 
 /**
@@ -161,5 +164,27 @@ public class UserController {
         return ResultUtils.success(userService.searchUsersByTags(tagNameList));
     }
 
+    /**
+     * 搜索用户
+     *
+     * @param username 用户名
+     * @param request  请求
+     * @return {@code BaseResponse<List<UserSafetyVO>>}
+     */
+    @GetMapping("/search")
+    @CheckAuth(mustRole = UserConstant.ADMIN_ROLE)
+    public BaseResponse<List<UserSafetyVO>> searchUsers(String username, HttpServletRequest request) {
+        LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper<>();
+        if (StringUtils.isNotBlank(username)) {
+            queryWrapper.like(User::getUsername, username);
+        }
+        List<User> userList = userService.list(queryWrapper);
+        List<UserSafetyVO> list = userList.stream().map(userService::getUserSafetyVO).collect(Collectors.toList());
+        return ResultUtils.success(list);
+    }
+
+
     // end domain 用户的增删改查相关
+
+
 }
