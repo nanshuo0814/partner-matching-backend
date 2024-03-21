@@ -2,6 +2,7 @@ package com.nanshuo.partnermatching.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.nanshuo.partnermatching.annotation.Check;
 import com.nanshuo.partnermatching.annotation.CheckAuth;
 import com.nanshuo.partnermatching.annotation.CheckParam;
@@ -23,10 +24,13 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import static com.nanshuo.partnermatching.constant.UserConstant.USER_LOGIN_STATE;
@@ -45,9 +49,11 @@ import static com.nanshuo.partnermatching.constant.UserConstant.USER_LOGIN_STATE
 public class UserController {
 
     private final UserService userService;
+    private final RedisTemplate<String, Object> redisTemplate;
 
-    public UserController(UserService userService) {
+    public UserController(UserService userService, RedisTemplate<String,Object> redisTemplate) {
         this.userService = userService;
+        this.redisTemplate = redisTemplate;
     }
 
     // domain 用户登录相关
@@ -178,8 +184,36 @@ public class UserController {
         return ResultUtils.success(list);
     }
 
+    /**
+     * 推荐用户
+     *
+     * @param pageSize 页面大小
+     * @param pageNum  页码
+     * @param request  请求
+     * @return {@code BaseResponse<Page<User>>}
+     */
+    @GetMapping("/recommend")
+    public BaseResponse<Page<User>> recommendUsers(long pageSize, long pageNum, HttpServletRequest request) {
+        User loginUser = userService.getLoginUser(request);
+        String redisKey = String.format("partner:user:recommend:%s", loginUser.getId());
+        ValueOperations<String, Object> valueOperations = redisTemplate.opsForValue();
+        // 如果有缓存，直接读缓存
+        Page<User> userPage = (Page<User>) valueOperations.get(redisKey);
+        if (userPage != null) {
+            return ResultUtils.success(userPage);
+        }
+        // 无缓存，查数据库
+        QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+        userPage = userService.page(new Page<>(pageNum, pageSize), queryWrapper);
+        // 写缓存
+        try {
+            valueOperations.set(redisKey, userPage, 30000, TimeUnit.MILLISECONDS);
+        } catch (Exception e) {
+            log.error("redis set key error", e);
+        }
+        return ResultUtils.success(userPage);
+    }
 
-    // end domain 用户的增删改查相关
 
 
 }
