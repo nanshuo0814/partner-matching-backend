@@ -12,19 +12,24 @@ import com.nanshuo.partnermatching.constant.UserConstant;
 import com.nanshuo.partnermatching.exception.BusinessException;
 import com.nanshuo.partnermatching.mapper.UserMapper;
 import com.nanshuo.partnermatching.model.domain.User;
-import com.nanshuo.partnermatching.model.request.user.*;
+import com.nanshuo.partnermatching.model.request.user.UserLoginRequest;
+import com.nanshuo.partnermatching.model.request.user.UserRegisterRequest;
+import com.nanshuo.partnermatching.model.request.user.UserUpdateInfoRequest;
 import com.nanshuo.partnermatching.model.vo.user.UserLoginVO;
 import com.nanshuo.partnermatching.model.vo.user.UserSafetyVO;
 import com.nanshuo.partnermatching.service.UserService;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.ObjectUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
+import org.springframework.util.ObjectUtils;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.*;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Optional;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
@@ -114,12 +119,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         // 获取参数
         String userAccount = userLoginRequest.getUserAccount();
         String userPassword = userLoginRequest.getUserPassword();
-
-        // 校验图片验证码
-        Object trueImageCaptcha = redisTemplate.opsForValue().get(RedisKeyConstant.IMAGE_CAPTCHA_KEY);
-        if (ObjectUtils.isEmpty(trueImageCaptcha)) {
-            throw new BusinessException(ErrorCode.PARAMS_ERROR, "图片验证码已过期,请重新获取");
-        }
 
         // 查询用户信息
         LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper<>();
@@ -259,6 +258,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     // end domain 用户登录相关
 
     // domain 用户增删改查相关
+
     /**
      * 按标签搜索用户
      *
@@ -277,7 +277,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         // 2. 在内存中判断是否包含要求的标签
         return userList.stream().filter(user -> {
             String tagsStr = user.getTags();
-            Set<String> tempTagNameSet = gson.fromJson(tagsStr, new TypeToken<Set<String>>() {}.getType());
+            Set<String> tempTagNameSet = gson.fromJson(tagsStr, new TypeToken<Set<String>>() {
+            }.getType());
             tempTagNameSet = Optional.ofNullable(tempTagNameSet).orElse(new HashSet<>());
             for (String tagName : tagNameList) {
                 if (!tempTagNameSet.contains(tagName)) {
@@ -286,5 +287,39 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
             }
             return true;
         }).map(this::getUserSafetyVO).collect(Collectors.toList());
+    }
+
+    /**
+     * 更新用户
+     *
+     * @param user      用户
+     * @param loginUser 登录用户
+     * @return {@code Integer}
+     */
+    @Override
+    public Integer updateUser(UserUpdateInfoRequest user, User loginUser) {
+        long userId = user.getId();
+        if (userId <= 0) {
+            throw new BusinessException(ErrorCode.NOT_FOUND_ERROR);
+        }
+        // 如果是管理员，允许更新任意用户
+        // 如果不是管理员，只允许更新当前（自己的）信息
+        if (!loginUser.getUserRole().equals(UserConstant.ADMIN_ROLE) && userId != loginUser.getId()) {
+            throw new BusinessException(ErrorCode.NO_AUTH_ERROR);
+        }
+        User oldUser = this.baseMapper.selectById(userId);
+        if (oldUser == null) {
+            throw new BusinessException(ErrorCode.NOT_FOUND_ERROR);
+        }
+        User updateUser = new User();
+        updateUser.setId(userId);
+        updateUser.setUserAccount(!ObjectUtils.isEmpty(user.getUserAccount()) ? user.getUserAccount() : oldUser.getUserAccount());
+        updateUser.setUsername(!ObjectUtils.isEmpty(user.getUsername()) ? user.getUsername() : oldUser.getUsername());
+        updateUser.setAvatarUrl(!ObjectUtils.isEmpty(user.getAvatarUrl()) ? user.getAvatarUrl() : oldUser.getAvatarUrl());
+        updateUser.setEmail(!ObjectUtils.isEmpty(user.getEmail()) ? user.getEmail() : oldUser.getEmail());
+        updateUser.setPhone(!ObjectUtils.isEmpty(user.getPhone()) ? user.getPhone() : oldUser.getPhone());
+        updateUser.setGender(!ObjectUtils.isEmpty(user.getGender()) ? user.getGender() : oldUser.getGender());
+        updateUser.setUserPassword(!ObjectUtils.isEmpty(user.getUserPassword()) ? user.getUserPassword() : oldUser.getUserPassword());
+        return this.baseMapper.updateById(updateUser);
     }
 }

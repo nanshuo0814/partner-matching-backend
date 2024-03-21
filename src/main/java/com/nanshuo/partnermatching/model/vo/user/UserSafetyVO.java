@@ -19,13 +19,13 @@ public class UserSafetyVO implements Serializable {
      * 用户 id
      */
     @ApiModelProperty(value = "用户 id", required = true)
-    private Long userId;
+    private Long id;
 
     /**
      * 用户昵称
      */
     @ApiModelProperty(value = "用户昵称", required = true)
-    private String userName;
+    private String username;
 
     /**
      * 用户头像

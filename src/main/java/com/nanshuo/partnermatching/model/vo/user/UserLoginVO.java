@@ -22,19 +22,19 @@ public class UserLoginVO implements Serializable {
      * 用户 id
      */
     @ApiModelProperty(value = "用户 id", required = true)
-    private Long userId;
+    private Long id;
 
     /**
      * 用户昵称
      */
     @ApiModelProperty(value = "用户昵称", required = true)
-    private String userName;
+    private String username;
 
     /**
      * 用户头像
      */
     @ApiModelProperty(value = "用户头像", required = true)
-    private String userAvatar;
+    private String avatarUrl;
 
     /**
      * 用户账号
@@ -46,19 +46,13 @@ public class UserLoginVO implements Serializable {
      * 用户性别
      */
     @ApiModelProperty(value = "用户性别", required = true)
-    private Integer userGender;
-
-    /**
-     * 用户简介
-     */
-    @ApiModelProperty(value = "用户简介", required = true)
-    private String userProfile;
+    private Integer gender;
 
     /**
      * 用户邮箱
      */
     @ApiModelProperty(value = "用户邮箱", required = true)
-    private String userEmail;
+    private String email;
 
 
     /**

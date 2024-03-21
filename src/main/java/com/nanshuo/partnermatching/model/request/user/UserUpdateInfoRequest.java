@@ -22,11 +22,25 @@ public class UserUpdateInfoRequest implements Serializable {
     private static final long serialVersionUID = 7658342535926195857L;
 
     /**
+     * 用户id
+     */
+    @ApiModelProperty(value = "用户id", required = true)
+    @CheckParam(alias = "用户id", required = NumberConstant.TRUE_VALUE, regex = UserRegexEnums.USER_ID)
+    private Long id;
+
+    /**
+     * 用户账号
+     */
+    @ApiModelProperty(value = "用户账号", required = false)
+    @CheckParam(alias = "用户账号", required = NumberConstant.FALSE_VALUE, regex = UserRegexEnums.ACCOUNT)
+    private String userAccount;
+
+    /**
      * 用户昵称
      */
     @ApiModelProperty(value = "用户昵称")
     @CheckParam(alias = "用户昵称", required = NumberConstant.FALSE_VALUE, regex = UserRegexEnums.USERNAME)
-    private String userName;
+    private String username;
 
     /**
      * 用户头像
@@ -40,14 +54,22 @@ public class UserUpdateInfoRequest implements Serializable {
      */
     @ApiModelProperty(value = "用户邮箱")
     @CheckParam(alias = "用户邮箱", required = NumberConstant.FALSE_VALUE, regex = UserRegexEnums.EMAIL)
-    private String userEmail;
+    private String email;
+
+    /**
+     * 手机号
+     */
+    @ApiModelProperty(value = "手机号")
+    @CheckParam(alias = "手机号", required = NumberConstant.FALSE_VALUE, regex = UserRegexEnums.PHONE)
+    private String phone;
+
 
     /**
      * 用户性别
      */
     @ApiModelProperty(value = "用户性别")
     @CheckParam(alias = "用户性别", required = NumberConstant.FALSE_VALUE, regex = UserRegexEnums.USER_GENDER)
-    private Integer userGender;
+    private Integer gender;
 
     /**
      * 用户密码

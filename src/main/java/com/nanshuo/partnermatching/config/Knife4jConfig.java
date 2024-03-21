@@ -27,7 +27,7 @@ public class Knife4jConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(new ApiInfoBuilder()
                         .title("接口文档")
-                        .contact(new Contact("nanshuo", "https://blog.ydg.icu/", "inanshuo@foxmail.com"))
+                        .contact(new Contact("nanshuo", "https://blog.ydg.icu/", "nanshuo.icu@qq.com"))
                         .description("partner-matching-backend")
                         .termsOfServiceUrl("https://doc.xiaominfo.com/")
                         .version("1.0")
@@ -35,7 +35,7 @@ public class Knife4jConfig {
                 //分组名称
                 .select()
                 // 指定 Controller 扫描包路径
-                .apis(RequestHandlerSelectors.basePackage("com.nanshuo.springboot.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.nanshuo.partnermatching.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

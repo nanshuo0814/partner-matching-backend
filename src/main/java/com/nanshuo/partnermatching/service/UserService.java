@@ -85,4 +85,6 @@ public interface UserService extends IService<User> {
     UserSafetyVO getUserSafetyVO(User user);
 
     List<UserSafetyVO> searchUsersByTags(List<String> tagNameList);
+
+    Integer updateUser(UserUpdateInfoRequest user, User loginUser);
 }

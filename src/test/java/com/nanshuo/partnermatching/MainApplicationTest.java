@@ -17,7 +17,7 @@ class MainApplicationTest {
      */
     @Test
     void testMd5() {
-        String password = "admin123";
+        String password = "nanshuo.icu";
         String encryptPassword = DigestUtils.md5DigestAsHex((UserConstant.SALT + password).getBytes());
         System.out.println(encryptPassword);
     }

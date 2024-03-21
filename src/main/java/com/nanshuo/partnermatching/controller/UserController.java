@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.nanshuo.partnermatching.annotation.Check;
 import com.nanshuo.partnermatching.annotation.CheckAuth;
+import com.nanshuo.partnermatching.annotation.CheckParam;
 import com.nanshuo.partnermatching.common.BaseResponse;
 import com.nanshuo.partnermatching.common.ErrorCode;
 import com.nanshuo.partnermatching.common.ResultUtils;
@@ -134,21 +135,16 @@ public class UserController {
      * 修改用户信息
      *
      * @param request               请求
-     * @param userUpdateInfoRequest 用户更新信息Request
      * @return {@code BaseResponse<Boolean>}
      */
     @PostMapping("/update")
-    @Check(checkParam = true, checkAuth = UserConstant.ADMIN_ROLE)
+    @Check(checkParam = true)
     @ApiOperation(value = "修改用户信息", notes = "修改用户信息")
-    public BaseResponse<String> updateUserInfo(@RequestBody UserUpdateInfoRequest userUpdateInfoRequest,
+    public BaseResponse<Integer> updateUserInfo(@RequestBody UserUpdateInfoRequest user,
                                                HttpServletRequest request) {
         User loginUser = userService.getLoginUser(request);
-        User user = new User();
-        BeanUtils.copyProperties(userUpdateInfoRequest, user);
-        user.setId(loginUser.getId());
-        boolean result = userService.updateById(user);
-        ThrowUtils.throwIf(!result, ErrorCode.FAIL);
-        return ResultUtils.success("更新用户信息成功！");
+        int result = userService.updateUser(user, loginUser);
+        return ResultUtils.success(result);
     }
 
     /**
@@ -168,12 +164,12 @@ public class UserController {
      * 搜索用户
      *
      * @param username 用户名
-     * @param request  请求
      * @return {@code BaseResponse<List<UserSafetyVO>>}
      */
     @GetMapping("/search")
+    @ApiOperation(value = "搜索用户", notes = "搜索用户")
     @CheckAuth(mustRole = UserConstant.ADMIN_ROLE)
-    public BaseResponse<List<UserSafetyVO>> searchUsers(String username, HttpServletRequest request) {
+    public BaseResponse<List<UserSafetyVO>> searchUsers(String username) {
         LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper<>();
         if (StringUtils.isNotBlank(username)) {
             queryWrapper.like(User::getUsername, username);
