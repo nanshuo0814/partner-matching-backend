@@ -958,3 +958,678 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2024-03-21 14:24:26.991 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Started MainApplication in 2.86 seconds (JVM running for 452.893)
 2024-03-21 14:24:27.002 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
 2024-03-21 14:24:27.002 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Project started successfully！
+2024-03-21 14:26:29.771 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 8864 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-21 14:26:29.773 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - The following 1 profile is active: "dev"
+2024-03-21 14:26:29.855 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-21 14:26:29.856 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-21 14:26:30.623 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-21 14:26:30.626 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-21 14:26:30.650 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-03-21 14:26:31.520 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-21 14:26:31.530 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 14:26:31.531 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 14:26:31.532 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-21 14:26:31.611 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-21 14:26:31.612 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1756 ms
+2024-03-21 14:26:33.758 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-21 14:26:35.154 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 14:26:35.163 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-21 14:26:35.529 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-21 14:26:35.537 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Started MainApplication in 6.256 seconds (JVM running for 7.611)
+2024-03-21 14:26:35.540 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Project started successfully！
+2024-03-21 14:26:44.086 [http-nio-0.0.0.0-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-03-21 14:26:44.094 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 14:26:44.094 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 14:26:44.098 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-03-21 14:27:01.002 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 5e8cf455-8603-49da-abad-5a3731fff4b8, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@6f9d3392]
+2024-03-21 14:27:01.033 [http-nio-0.0.0.0-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 14:27:01.260 [http-nio-0.0.0.0-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 14:27:01.311 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 5e8cf455-8603-49da-abad-5a3731fff4b8, cost: 314ms
+2024-03-21 14:29:09.581 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 1e6f948c-45ff-460a-8316-650118e5d4e3, path: /api/user/search/tags, ip: 0:0:0:0:0:0:0:1, params: [[男]]
+2024-03-21 14:29:09.622 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 1e6f948c-45ff-460a-8316-650118e5d4e3, cost: 41ms
+2024-03-21 14:29:36.364 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: b8aa7ae0-90d8-48c4-bfec-51b2ff02250c, path: /api/user/search/tags, ip: 0:0:0:0:0:0:0:1, params: []
+2024-03-21 14:29:50.277 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 27aff735-174b-4f0e-961e-fbd86818d8eb, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@6e0129da]
+2024-03-21 14:29:50.281 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 27aff735-174b-4f0e-961e-fbd86818d8eb, cost: 4ms
+2024-03-21 14:31:09.217 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 7190e583-3546-45fa-a037-77dc3d39fbeb, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@ec33f24]
+2024-03-21 14:31:09.245 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 7190e583-3546-45fa-a037-77dc3d39fbeb, cost: 29ms
+2024-03-21 14:31:12.300 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 1ae4e2f9-f40e-4c8e-ae56-61f173757faf, path: /api/user/search/tags, ip: 0:0:0:0:0:0:0:1, params: []
+2024-03-21 14:31:14.256 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 96980e1d-5d4f-4ac3-94b2-ee1411937c85, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@18fda3d0]
+2024-03-21 14:31:14.260 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 96980e1d-5d4f-4ac3-94b2-ee1411937c85, cost: 4ms
+2024-03-21 14:31:20.195 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 80da5ade-abc7-4ad4-9f64-3f38fd705cad, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@1ffc6950]
+2024-03-21 14:31:20.200 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 80da5ade-abc7-4ad4-9f64-3f38fd705cad, cost: 5ms
+2024-03-21 14:31:22.512 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: d0f8c830-6dd8-492e-84f3-a22aad438c6f, path: /api/user/search/tags, ip: 0:0:0:0:0:0:0:1, params: [[男]]
+2024-03-21 14:31:22.524 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: d0f8c830-6dd8-492e-84f3-a22aad438c6f, cost: 6ms
+2024-03-21 14:31:22.893 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 1ed68f59-f683-4f39-9622-7527308b5214, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@5a80ae96]
+2024-03-21 14:31:22.893 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 1ed68f59-f683-4f39-9622-7527308b5214, cost: 6ms
+2024-03-21 14:31:28.170 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 1e86089c-153a-4908-9091-a221a3a799a5, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@3eae87f4]
+2024-03-21 14:31:28.174 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 1e86089c-153a-4908-9091-a221a3a799a5, cost: 3ms
+2024-03-21 14:31:38.849 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 4b7ce79e-ea7f-4c84-9424-9c45c08f52a1, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@5ff4e2a7]
+2024-03-21 14:31:38.857 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 4b7ce79e-ea7f-4c84-9424-9c45c08f52a1, cost: 5ms
+2024-03-21 14:31:41.979 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: fe4b19f5-1c56-4775-ba90-b572a7e72267, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@2dcb1be0]
+2024-03-21 14:31:41.979 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: fe4b19f5-1c56-4775-ba90-b572a7e72267, cost: 4ms
+2024-03-21 14:32:31.513 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: e1ae98e5-68a6-49cb-8a18-8799a9ccd205, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@48b5424a]
+2024-03-21 14:32:31.517 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: e1ae98e5-68a6-49cb-8a18-8799a9ccd205, cost: 4ms
+2024-03-21 14:32:41.492 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 8531659d-037d-4ce7-b585-0dfd69c85e43, path: /api/user/logout, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@5ecee9cb]
+2024-03-21 14:32:41.541 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 8531659d-037d-4ce7-b585-0dfd69c85e43, cost: 55ms
+2024-03-21 14:32:44.587 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: f233322b-b01d-4bf7-987b-92b3be453c08, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@51113e5e]
+2024-03-21 14:33:02.550 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 9f2c2ec2-0aa7-463e-b8dc-dd98a36482ac, path: /api/user/login, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@156543bd, UserLoginRequest(userAccount=user123, userPassword=user1223)]
+2024-03-21 14:33:11.789 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 3b567225-3610-4375-a221-99071c7ba045, path: /api/user/login, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@183dfb4f, UserLoginRequest(userAccount=user123, userPassword=user1223)]
+2024-03-21 14:33:33.099 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 7753892e-6fb3-40f1-84f4-8d90dbc0a9ff, path: /api/user/login, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@11238aa8, UserLoginRequest(userAccount=user123, userPassword=user1223)]
+2024-03-21 14:33:39.021 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 33d77a8c-eee6-4532-af47-38fb8ab64ffa, path: /api/user/login, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@355d6398, UserLoginRequest(userAccount=user123, userPassword=user123)]
+2024-03-21 14:33:39.040 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 33d77a8c-eee6-4532-af47-38fb8ab64ffa, cost: 18ms
+2024-03-21 14:33:44.413 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 6f1ec8ef-662f-479e-88b8-0582eeb9a51f, path: /api/user/login, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@50fa8cd, UserLoginRequest(userAccount=user123, userPassword=user123)]
+2024-03-21 14:33:44.422 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 6f1ec8ef-662f-479e-88b8-0582eeb9a51f, cost: 5ms
+2024-03-21 14:34:17.726 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 630da2db-5d37-4526-99e5-a277f90b83f9, path: /api/user/login, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@5c764611, UserLoginRequest(userAccount=user123, userPassword=user123)]
+2024-03-21 14:34:17.734 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 630da2db-5d37-4526-99e5-a277f90b83f9, cost: 5ms
+2024-03-21 14:34:18.423 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 902ebb99-ced1-49b0-bff0-cba38b856980, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@3664d09]
+2024-03-21 14:34:18.426 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 902ebb99-ced1-49b0-bff0-cba38b856980, cost: 6ms
+2024-03-21 14:35:14.622 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: d8cd8121-6049-4be0-b714-fb7c6cb3e128, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@4b26ff66]
+2024-03-21 14:35:14.626 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: d8cd8121-6049-4be0-b714-fb7c6cb3e128, cost: 4ms
+2024-03-21 14:35:14.638 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: eef04a47-be87-4703-a7c3-143ca577c0f5, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@47152c8b]
+2024-03-21 14:35:14.641 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: eef04a47-be87-4703-a7c3-143ca577c0f5, cost: 3ms
+2024-03-21 14:35:35.756 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: ba6ffc5d-494e-417a-87bd-6fca11084685, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@5fc54eca]
+2024-03-21 14:35:35.760 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: ba6ffc5d-494e-417a-87bd-6fca11084685, cost: 4ms
+2024-03-21 14:35:42.546 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 14:35:42.558 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-21 14:36:02.442 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 3404 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-21 14:36:02.445 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - The following 1 profile is active: "dev"
+2024-03-21 14:36:02.540 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-21 14:36:02.541 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-21 14:36:03.640 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-21 14:36:03.643 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-21 14:36:03.677 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-03-21 14:36:04.745 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-21 14:36:04.753 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 14:36:04.754 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 14:36:04.754 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-21 14:36:04.820 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-21 14:36:04.821 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2280 ms
+2024-03-21 14:36:07.197 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-21 14:36:08.711 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 14:36:08.721 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-21 14:36:09.245 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-21 14:36:09.255 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Started MainApplication in 7.368 seconds (JVM running for 9.021)
+2024-03-21 14:36:09.260 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Project started successfully！
+2024-03-21 14:36:13.417 [http-nio-0.0.0.0-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-03-21 14:36:13.423 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 14:36:13.423 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 14:36:13.426 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-03-21 14:36:13.502 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: ee29f621-88ac-454f-9438-a3f4a08745d9, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@75256d65]
+2024-03-21 14:36:13.539 [http-nio-0.0.0.0-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 14:36:13.850 [http-nio-0.0.0.0-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 14:36:13.907 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: ee29f621-88ac-454f-9438-a3f4a08745d9, cost: 410ms
+2024-03-21 14:36:17.237 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 14174a8e-3f93-46b3-b7d6-e72a7dc47d3e, path: /api/user/logout, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@7e04945e]
+2024-03-21 14:36:17.287 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 14174a8e-3f93-46b3-b7d6-e72a7dc47d3e, cost: 49ms
+2024-03-21 14:36:22.138 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 9a260b24-336f-4b72-95fd-425a1e53c192, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@3f273d2]
+2024-03-21 14:36:26.606 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 212eb235-a645-49ea-8f38-28cc2decbdf6, path: /api/user/login, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@83a8eed, UserLoginRequest(userAccount=user123, userPassword=user123)]
+2024-03-21 14:36:26.661 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 212eb235-a645-49ea-8f38-28cc2decbdf6, cost: 54ms
+2024-03-21 14:36:31.827 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: fef8af68-8dc7-48df-9b1f-2f89f0048e7c, path: /api/user/login, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@a346500, UserLoginRequest(userAccount=user123, userPassword=user123)]
+2024-03-21 14:36:31.834 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: fef8af68-8dc7-48df-9b1f-2f89f0048e7c, cost: 6ms
+2024-03-21 14:36:34.465 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 02f88062-8693-456d-a43e-aabb22101b33, path: /api/user/login, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@2a3b9f62, UserLoginRequest(userAccount=user123, userPassword=user123)]
+2024-03-21 14:36:34.471 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 02f88062-8693-456d-a43e-aabb22101b33, cost: 6ms
+2024-03-21 14:36:58.431 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-03-21 14:36:59.344 [Thread-15] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 14:36:59.345 [Thread-15] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-21 14:36:59.346 [Thread-15] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-21 14:36:59.358 [Thread-15] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 14:36:59.363 [Thread-15] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 14:36:59.371 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 14:36:59.385 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-21 14:36:59.877 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 3404 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-21 14:36:59.878 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - The following 1 profile is active: "dev"
+2024-03-21 14:37:00.475 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-21 14:37:00.475 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-21 14:37:00.488 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2024-03-21 14:37:00.837 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-21 14:37:00.838 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 14:37:00.838 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 14:37:00.839 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-21 14:37:00.864 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-21 14:37:00.866 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 983 ms
+2024-03-21 14:37:03.267 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-21 14:37:03.743 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 14:37:03.747 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-21 14:37:03.863 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-21 14:37:03.864 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Started MainApplication in 4.053 seconds (JVM running for 63.63)
+2024-03-21 14:37:03.867 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-21 14:37:03.867 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Project started successfully！
+2024-03-21 14:37:05.217 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-03-21 14:37:06.031 [Thread-26] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 14:37:06.031 [Thread-26] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-21 14:37:06.039 [Thread-26] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 14:37:06.042 [Thread-26] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 14:37:06.425 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 3404 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-21 14:37:06.425 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - The following 1 profile is active: "dev"
+2024-03-21 14:37:06.834 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-21 14:37:06.834 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-21 14:37:06.841 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-03-21 14:37:06.982 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-21 14:37:06.983 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 14:37:06.983 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 14:37:06.983 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-21 14:37:06.996 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-21 14:37:06.996 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 567 ms
+2024-03-21 14:37:08.193 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-21 14:37:08.502 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 14:37:08.528 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-21 14:37:08.615 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-21 14:37:08.616 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Started MainApplication in 2.24 seconds (JVM running for 68.382)
+2024-03-21 14:37:08.618 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-21 14:37:08.618 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Project started successfully！
+2024-03-21 14:38:52.871 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 19352 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-21 14:38:52.874 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - The following 1 profile is active: "dev"
+2024-03-21 14:38:53.017 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-21 14:38:53.018 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-21 14:38:54.079 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-21 14:38:54.082 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-21 14:38:54.114 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-03-21 14:38:55.299 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-21 14:38:55.309 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 14:38:55.310 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 14:38:55.310 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-21 14:38:55.392 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-21 14:38:55.393 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2374 ms
+2024-03-21 14:38:59.239 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-21 14:39:00.958 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 14:39:00.967 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-21 14:39:01.478 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-21 14:39:01.489 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Started MainApplication in 9.426 seconds (JVM running for 11.035)
+2024-03-21 14:39:01.493 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Project started successfully！
+2024-03-21 14:39:04.412 [http-nio-0.0.0.0-8080-exec-2] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-03-21 14:39:04.420 [http-nio-0.0.0.0-8080-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 14:39:04.421 [http-nio-0.0.0.0-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 14:39:04.425 [http-nio-0.0.0.0-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-03-21 14:39:04.521 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: dbc2e58e-e8d7-4475-bbd3-66fa87a4892e, path: /api/user/login, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@2eff842a, UserLoginRequest(userAccount=user123, userPassword=user123)]
+2024-03-21 14:39:04.585 [http-nio-0.0.0.0-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 14:39:04.841 [http-nio-0.0.0.0-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 14:39:04.916 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: dbc2e58e-e8d7-4475-bbd3-66fa87a4892e, cost: 395ms
+2024-03-21 14:39:05.515 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 93fc6892-ca49-41fc-b1fc-b9bedc7986e6, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@744e2490]
+2024-03-21 14:39:05.539 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 93fc6892-ca49-41fc-b1fc-b9bedc7986e6, cost: 24ms
+2024-03-21 14:39:07.048 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 86d042aa-f1b4-4b62-89f2-451e79b64a9d, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@4ccd4516]
+2024-03-21 14:39:07.053 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 86d042aa-f1b4-4b62-89f2-451e79b64a9d, cost: 4ms
+2024-03-21 14:39:08.070 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: e73b72ca-b9a9-4276-a4d5-9eb22610d1db, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@67f57f0e]
+2024-03-21 14:39:08.073 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: e73b72ca-b9a9-4276-a4d5-9eb22610d1db, cost: 2ms
+2024-03-21 14:41:09.081 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 0ae7e487-13bc-464c-a678-82bcf779e8bf, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@6610effe]
+2024-03-21 14:41:09.084 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 0ae7e487-13bc-464c-a678-82bcf779e8bf, cost: 3ms
+2024-03-21 14:41:20.433 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 7fbce5e9-b23e-4ed4-b63f-468160dbec5c, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@24d4fc15]
+2024-03-21 14:41:20.436 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 7fbce5e9-b23e-4ed4-b63f-468160dbec5c, cost: 3ms
+2024-03-21 14:41:42.064 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 37248d66-5363-4345-9538-215659132b92, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@f9c9cea]
+2024-03-21 14:41:42.067 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 37248d66-5363-4345-9538-215659132b92, cost: 3ms
+2024-03-21 14:41:45.000 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 98e0864a-7083-4999-8ab2-322e16ec156d, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@45cfdd5]
+2024-03-21 14:41:45.004 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 98e0864a-7083-4999-8ab2-322e16ec156d, cost: 4ms
+2024-03-21 14:41:45.031 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 8b4028e9-c2e0-49d8-bdde-c6cd02b4a15f, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=null, avatarUrl=null, email=null, phone=null, gender=null, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@73c550e8]
+2024-03-21 14:41:45.054 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 8b4028e9-c2e0-49d8-bdde-c6cd02b4a15f, cost: 23ms
+2024-03-21 14:41:45.082 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: a124d364-6736-41e6-88ce-09e33918636d, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@1593b2d1]
+2024-03-21 14:41:45.087 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: a124d364-6736-41e6-88ce-09e33918636d, cost: 4ms
+2024-03-21 14:41:48.510 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 60ee0f70-32d1-40db-8ff0-669bf1f5fd52, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@5fff1f22]
+2024-03-21 14:41:48.515 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 60ee0f70-32d1-40db-8ff0-669bf1f5fd52, cost: 5ms
+2024-03-21 14:41:51.390 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 7e0b9a24-5e90-4d5b-bade-1a50509622a0, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@4a23e1e8]
+2024-03-21 14:41:51.393 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 7e0b9a24-5e90-4d5b-bade-1a50509622a0, cost: 3ms
+2024-03-21 14:41:55.497 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 018e826e-9708-4950-a819-50b98f45bd47, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@5e436ea9]
+2024-03-21 14:41:55.499 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 018e826e-9708-4950-a819-50b98f45bd47, cost: 2ms
+2024-03-21 14:43:41.123 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: da7ca86c-546f-4e7b-9c7f-be9abdf63d35, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@5a7fc2ac]
+2024-03-21 14:43:41.127 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: da7ca86c-546f-4e7b-9c7f-be9abdf63d35, cost: 3ms
+2024-03-21 14:47:31.940 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 14:47:31.953 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-21 18:50:22.936 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 19576 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-21 18:50:22.938 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - The following 1 profile is active: "dev"
+2024-03-21 18:50:23.065 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-21 18:50:23.065 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-21 18:50:24.477 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-21 18:50:24.481 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-21 18:50:24.521 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-03-21 18:50:25.760 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-21 18:50:25.770 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:50:25.771 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 18:50:25.771 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-21 18:50:25.850 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-21 18:50:25.850 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2784 ms
+2024-03-21 18:50:31.423 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-21 18:50:33.538 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:50:33.549 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-21 18:50:34.146 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-21 18:50:34.159 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Started MainApplication in 12.079 seconds (JVM running for 14.775)
+2024-03-21 18:50:34.164 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Project started successfully！
+2024-03-21 18:50:41.462 [http-nio-0.0.0.0-8080-exec-2] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-03-21 18:50:41.480 [http-nio-0.0.0.0-8080-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 18:50:41.480 [http-nio-0.0.0.0-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 18:50:41.484 [http-nio-0.0.0.0-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-03-21 18:50:41.530 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: da1e9ab1-8a95-42c6-b3a4-de1f16e1fe1b, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@820016f]
+2024-03-21 18:50:41.561 [http-nio-0.0.0.0-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 18:50:41.867 [http-nio-0.0.0.0-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 18:50:41.936 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: da1e9ab1-8a95-42c6-b3a4-de1f16e1fe1b, cost: 404ms
+2024-03-21 18:50:44.588 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 7ea767f7-af11-4216-9a84-a4fb3222c314, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@746aa675]
+2024-03-21 18:50:44.596 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 7ea767f7-af11-4216-9a84-a4fb3222c314, cost: 5ms
+2024-03-21 18:50:46.733 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 39228749-7018-4ca6-928a-3131364916cc, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@2ca9b00a]
+2024-03-21 18:50:46.733 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 39228749-7018-4ca6-928a-3131364916cc, cost: 3ms
+2024-03-21 18:50:48.119 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 4dd56e4b-faed-4877-8c32-e81fd4d78439, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@71dc4988]
+2024-03-21 18:50:48.125 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 4dd56e4b-faed-4877-8c32-e81fd4d78439, cost: 7ms
+2024-03-21 18:50:49.464 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 97386449-4165-4216-813d-17a37b090764, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@19d09299]
+2024-03-21 18:50:49.468 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 97386449-4165-4216-813d-17a37b090764, cost: 3ms
+2024-03-21 18:50:50.612 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: bdb029ec-3dee-466a-ae54-3215ad923521, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@65f9cb0d]
+2024-03-21 18:50:50.616 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: bdb029ec-3dee-466a-ae54-3215ad923521, cost: 4ms
+2024-03-21 18:50:52.030 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 3c0b8d72-43ce-4d91-9aa1-adb77244b2be, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@66bb40eb]
+2024-03-21 18:50:52.030 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 3c0b8d72-43ce-4d91-9aa1-adb77244b2be, cost: 2ms
+2024-03-21 18:50:54.771 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: af0d781d-748c-4f7f-84a8-6c41c64fd048, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@3fbce1b9]
+2024-03-21 18:50:54.777 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: af0d781d-748c-4f7f-84a8-6c41c64fd048, cost: 4ms
+2024-03-21 18:51:35.616 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 1cb28d08-83b9-4322-9890-e2529d9860dd, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@2b95a92]
+2024-03-21 18:51:35.621 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 1cb28d08-83b9-4322-9890-e2529d9860dd, cost: 5ms
+2024-03-21 18:51:39.320 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 0374a2d3-e980-4b17-8c3a-2c4e2155806d, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@385db6ac]
+2024-03-21 18:51:39.320 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 0374a2d3-e980-4b17-8c3a-2c4e2155806d, cost: 3ms
+2024-03-21 18:51:40.637 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 481a296c-6d11-44e7-ad0d-58cd0afbb7de, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@1d106791]
+2024-03-21 18:51:40.637 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 481a296c-6d11-44e7-ad0d-58cd0afbb7de, cost: 3ms
+2024-03-21 18:53:37.948 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: e17c5105-4663-4ce6-ac06-90686ded0a67, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@4068f423]
+2024-03-21 18:53:37.951 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: e17c5105-4663-4ce6-ac06-90686ded0a67, cost: 4ms
+2024-03-21 18:53:40.584 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 4 class path changes (0 additions, 4 deletions, 0 modifications)
+2024-03-21 18:53:41.158 [Thread-17] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:53:41.159 [Thread-17] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-21 18:53:41.161 [Thread-17] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-21 18:53:41.171 [Thread-17] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:53:41.175 [Thread-17] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:53:41.182 [Thread-17] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 18:53:41.196 [Thread-17] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-21 18:53:41.551 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 19576 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-21 18:53:41.551 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - The following 1 profile is active: "dev"
+2024-03-21 18:53:41.886 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-21 18:53:41.886 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-21 18:53:41.892 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-03-21 18:53:42.096 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-21 18:53:42.096 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:53:42.097 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 18:53:42.097 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-21 18:53:42.114 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-21 18:53:42.114 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 561 ms
+2024-03-21 18:53:42.189 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-21 18:53:42.195 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-03-21 18:53:44.736 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 19576 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-21 18:53:44.736 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - The following 1 profile is active: "dev"
+2024-03-21 18:53:45.142 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-21 18:53:45.142 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-21 18:53:45.151 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-03-21 18:53:45.404 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-21 18:53:45.405 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:53:45.405 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 18:53:45.405 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-21 18:53:45.420 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-21 18:53:45.420 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 665 ms
+2024-03-21 18:53:45.536 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-21 18:53:45.543 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-03-21 18:54:01.581 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 19576 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-21 18:54:01.582 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - The following 1 profile is active: "dev"
+2024-03-21 18:54:02.121 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-21 18:54:02.121 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-21 18:54:02.130 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-03-21 18:54:02.400 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-21 18:54:02.401 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:54:02.402 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 18:54:02.402 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-21 18:54:02.421 [restartedMain] INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-21 18:54:02.422 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 835 ms
+2024-03-21 18:54:02.545 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-21 18:54:02.556 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-03-21 18:54:08.685 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 19576 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-21 18:54:08.685 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - The following 1 profile is active: "dev"
+2024-03-21 18:54:09.318 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-21 18:54:09.318 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-21 18:54:09.330 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-03-21 18:54:09.635 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-21 18:54:09.636 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:54:09.637 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 18:54:09.637 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-21 18:54:09.653 [restartedMain] INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-21 18:54:09.653 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 962 ms
+2024-03-21 18:54:09.784 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-21 18:54:09.795 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-03-21 18:55:07.791 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 19576 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-21 18:55:07.791 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - The following 1 profile is active: "dev"
+2024-03-21 18:55:08.207 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-21 18:55:08.207 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-21 18:55:08.214 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-03-21 18:55:08.411 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-21 18:55:08.411 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:55:08.411 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 18:55:08.411 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-21 18:55:08.425 [restartedMain] INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-21 18:55:08.425 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 630 ms
+2024-03-21 18:55:08.521 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-21 18:55:08.527 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-03-21 18:55:19.630 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 6472 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-21 18:55:19.632 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - The following 1 profile is active: "dev"
+2024-03-21 18:55:19.751 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-21 18:55:19.752 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-21 18:55:21.007 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-21 18:55:21.010 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-21 18:55:21.040 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-03-21 18:55:22.012 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-21 18:55:22.019 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:55:22.020 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 18:55:22.020 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-21 18:55:22.081 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-21 18:55:22.081 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2328 ms
+2024-03-21 18:55:24.581 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-21 18:55:26.098 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:55:26.106 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-21 18:55:26.548 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-21 18:55:26.558 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Started MainApplication in 7.64 seconds (JVM running for 9.916)
+2024-03-21 18:55:26.562 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Project started successfully！
+2024-03-21 18:55:29.612 [http-nio-0.0.0.0-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-03-21 18:55:29.624 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 18:55:29.624 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 18:55:29.628 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-03-21 18:55:29.732 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 6e9c4603-f476-4ff2-ad8f-f015c82cfbf1, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@438fb101]
+2024-03-21 18:55:29.781 [http-nio-0.0.0.0-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 18:55:30.106 [http-nio-0.0.0.0-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 18:55:30.164 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 6e9c4603-f476-4ff2-ad8f-f015c82cfbf1, cost: 444ms
+2024-03-21 18:55:54.720 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 28c6294d-65f3-4b1b-bc1e-5971a989ecfb, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@59f032a]
+2024-03-21 18:55:54.727 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 28c6294d-65f3-4b1b-bc1e-5971a989ecfb, cost: 7ms
+2024-03-21 18:55:57.117 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 00bac35e-18b2-4fff-8513-1fed09982d5c, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@54c3761e]
+2024-03-21 18:55:57.122 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 00bac35e-18b2-4fff-8513-1fed09982d5c, cost: 4ms
+2024-03-21 18:55:58.236 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-03-21 18:55:58.896 [Thread-16] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:55:58.896 [Thread-16] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-21 18:55:58.896 [Thread-16] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-21 18:55:58.896 [Thread-16] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:55:58.906 [Thread-16] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:55:58.912 [Thread-16] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 18:55:58.928 [Thread-16] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-21 18:55:59.463 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 6472 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-21 18:55:59.463 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - The following 1 profile is active: "dev"
+2024-03-21 18:56:00.047 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-21 18:56:00.047 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-21 18:56:00.063 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-03-21 18:56:00.437 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-21 18:56:00.442 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:56:00.442 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 18:56:00.442 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-21 18:56:00.458 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-21 18:56:00.458 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 979 ms
+2024-03-21 18:56:02.442 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-21 18:56:02.837 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:56:02.842 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-21 18:56:02.962 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-21 18:56:02.962 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Started MainApplication in 3.565 seconds (JVM running for 46.332)
+2024-03-21 18:56:02.962 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-21 18:56:02.962 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Project started successfully！
+2024-03-21 18:56:04.229 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-03-21 18:56:05.213 [Thread-27] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:56:05.214 [Thread-27] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-21 18:56:05.221 [Thread-27] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:56:05.225 [Thread-27] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:56:05.920 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 6472 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-21 18:56:05.921 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - The following 1 profile is active: "dev"
+2024-03-21 18:56:06.558 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-21 18:56:06.558 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-21 18:56:06.570 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2024-03-21 18:56:06.876 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-21 18:56:06.877 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:56:06.878 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 18:56:06.878 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-21 18:56:06.899 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-21 18:56:06.900 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 974 ms
+2024-03-21 18:56:08.972 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-21 18:56:09.461 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:56:09.487 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-21 18:56:09.617 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-21 18:56:09.619 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Started MainApplication in 3.785 seconds (JVM running for 52.978)
+2024-03-21 18:56:09.622 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-21 18:56:09.623 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Project started successfully！
+2024-03-21 18:56:16.215 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 18:56:16.215 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 18:56:16.216 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-03-21 18:56:16.227 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: c09faee9-4efc-4b66-a950-71ccdd25dabb, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@78ed73d7]
+2024-03-21 18:56:16.239 [http-nio-0.0.0.0-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-03-21 18:56:16.263 [http-nio-0.0.0.0-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-03-21 18:56:16.281 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: c09faee9-4efc-4b66-a950-71ccdd25dabb, cost: 55ms
+2024-03-21 18:56:22.121 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-03-21 18:56:22.720 [Thread-31] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:56:22.721 [Thread-31] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-21 18:56:22.722 [Thread-31] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-21 18:56:22.729 [Thread-31] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:56:22.732 [Thread-31] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:56:22.734 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-03-21 18:56:22.746 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-03-21 18:56:23.132 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 6472 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-21 18:56:23.133 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - The following 1 profile is active: "dev"
+2024-03-21 18:56:23.476 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-21 18:56:23.476 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-21 18:56:23.484 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-03-21 18:56:23.680 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-21 18:56:23.681 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:56:23.682 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 18:56:23.682 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-21 18:56:23.713 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-21 18:56:23.714 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 577 ms
+2024-03-21 18:56:23.840 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-21 18:56:23.851 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-03-21 18:56:25.413 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 6472 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-21 18:56:25.413 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - The following 1 profile is active: "dev"
+2024-03-21 18:56:25.911 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-21 18:56:25.911 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-21 18:56:25.919 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-03-21 18:56:26.223 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-21 18:56:26.223 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:56:26.224 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 18:56:26.224 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-21 18:56:26.261 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-21 18:56:26.262 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 844 ms
+2024-03-21 18:56:29.537 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-21 18:56:29.857 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 18:56:29.860 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-21 18:56:29.982 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-21 18:56:29.983 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Started MainApplication in 4.628 seconds (JVM running for 73.341)
+2024-03-21 18:56:29.985 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-21 18:56:29.986 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Project started successfully！
+2024-03-21 18:57:36.374 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 18:57:36.375 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 18:57:36.377 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-03-21 18:57:36.383 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 35359605-6553-4e02-95fe-1479480649a0, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@7eb1595]
+2024-03-21 18:57:36.392 [http-nio-0.0.0.0-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-03-21 18:57:36.407 [http-nio-0.0.0.0-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-03-21 18:57:36.421 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 35359605-6553-4e02-95fe-1479480649a0, cost: 38ms
+2024-03-21 18:57:38.330 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: cd2adc7b-4a48-4d40-9cd1-dc8ac063b18f, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@4fd65684]
+2024-03-21 18:57:38.336 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: cd2adc7b-4a48-4d40-9cd1-dc8ac063b18f, cost: 7ms
+2024-03-21 18:57:42.334 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 3e4b5218-5158-4b8c-8f03-dea8f4855af9, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@71bf045c]
+2024-03-21 18:57:42.337 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 3e4b5218-5158-4b8c-8f03-dea8f4855af9, cost: 2ms
+2024-03-21 18:58:08.062 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 1aeb05e1-6edf-4bf1-bed2-5ad5133bdcb5, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@6304bf8d]
+2024-03-21 18:58:08.077 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 1aeb05e1-6edf-4bf1-bed2-5ad5133bdcb5, cost: 15ms
+2024-03-21 18:58:30.683 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 653d598e-c184-4c4e-b6b7-b06e42636091, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@762a5c26]
+2024-03-21 18:58:30.686 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 653d598e-c184-4c4e-b6b7-b06e42636091, cost: 3ms
+2024-03-21 18:58:32.013 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 9b2497d7-868e-48bc-b29b-5c5b4379e57b, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@158f06d9]
+2024-03-21 18:58:32.019 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 9b2497d7-868e-48bc-b29b-5c5b4379e57b, cost: 6ms
+2024-03-21 18:58:32.839 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 9167c6cd-2ebf-43a9-8f36-d959266a06b5, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@39601f32]
+2024-03-21 18:58:32.844 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 9167c6cd-2ebf-43a9-8f36-d959266a06b5, cost: 5ms
+2024-03-21 18:59:33.753 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 69c7cdcc-87de-4636-86ec-fd61ec16b3e3, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@1ad45adc]
+2024-03-21 18:59:33.753 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 69c7cdcc-87de-4636-86ec-fd61ec16b3e3, cost: 2ms
+2024-03-21 18:59:33.838 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 4b071410-0ade-43f7-93c3-cb5b16bd35fd, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=用户1, avatarUrl=null, email=null, phone=null, gender=null, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@6c8d0ab4]
+2024-03-21 18:59:36.562 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 29f7117b-18b3-49f6-9677-0fd45a693be6, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@21ff66c6]
+2024-03-21 18:59:36.566 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 29f7117b-18b3-49f6-9677-0fd45a693be6, cost: 3ms
+2024-03-21 18:59:36.579 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 2eb7d3d3-7bb1-486e-be53-52beb96e559f, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=用户1, avatarUrl=null, email=null, phone=null, gender=null, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@790f0a60]
+2024-03-21 18:59:48.868 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 5996ef30-5549-4a77-899f-1b6b74771dd1, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@3316acdc]
+2024-03-21 18:59:48.873 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 5996ef30-5549-4a77-899f-1b6b74771dd1, cost: 4ms
+2024-03-21 18:59:48.881 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: cda8bc57-4bfc-45dc-83e8-a3b7a1c5f721, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=用户1, avatarUrl=null, email=null, phone=null, gender=null, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@2444e39c]
+2024-03-21 19:00:13.136 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 2d7bcab9-d01d-4453-961d-03a684db4d3d, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@28db8489]
+2024-03-21 19:00:13.136 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 2d7bcab9-d01d-4453-961d-03a684db4d3d, cost: 2ms
+2024-03-21 19:00:13.151 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 9df8e52a-f05b-460e-bdbe-007afa82bb77, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=test122, avatarUrl=null, email=null, phone=null, gender=null, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@1d2dba93]
+2024-03-21 19:00:13.165 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 9df8e52a-f05b-460e-bdbe-007afa82bb77, cost: 14ms
+2024-03-21 19:00:13.184 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: bf831dbf-be75-401d-bb6f-6474884d2397, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@2999d235]
+2024-03-21 19:00:13.187 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: bf831dbf-be75-401d-bb6f-6474884d2397, cost: 3ms
+2024-03-21 19:01:24.637 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 6bac1178-e2fa-4549-a47b-75ce2e1505e8, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@5d9389a8]
+2024-03-21 19:01:24.637 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 6bac1178-e2fa-4549-a47b-75ce2e1505e8, cost: 2ms
+2024-03-21 19:01:24.652 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: baef479d-e6e7-469b-ad1f-7eed37f6b54a, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=test122等等, avatarUrl=null, email=null, phone=null, gender=null, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@1c6d8845]
+2024-03-21 19:02:58.989 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: daff5859-8178-4f04-895a-ae131e7939a8, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@59831a4a]
+2024-03-21 19:02:59.019 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: daff5859-8178-4f04-895a-ae131e7939a8, cost: 31ms
+2024-03-21 19:02:59.055 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 2e1ba5b5-5429-45de-8a55-dc4ff6ee5514, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=test122等等, avatarUrl=null, email=null, phone=null, gender=null, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@78037ef8]
+2024-03-21 19:03:30.155 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 70d2eed7-9b91-43e6-8ef2-acf82bfb0c07, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@6c3bd37]
+2024-03-21 19:03:30.159 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 70d2eed7-9b91-43e6-8ef2-acf82bfb0c07, cost: 3ms
+2024-03-21 19:03:30.172 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 5e976c34-b92b-4857-87ed-71fb108b91d9, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=test122等等, avatarUrl=null, email=null, phone=null, gender=null, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@35debdf2]
+2024-03-21 19:03:31.733 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 88f44e9f-6ff9-4704-98e2-12fa25cbe46f, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@4119db5a]
+2024-03-21 19:03:31.739 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 88f44e9f-6ff9-4704-98e2-12fa25cbe46f, cost: 7ms
+2024-03-21 19:03:31.753 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: b83e707e-5b10-4429-ad1f-329933096d2b, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=test122等等, avatarUrl=null, email=null, phone=null, gender=null, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@7f07d70c]
+2024-03-21 19:03:39.795 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: a7a7b271-e272-4b6d-9b58-7cb5e2a9a02e, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@dc1e490]
+2024-03-21 19:03:39.798 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: a7a7b271-e272-4b6d-9b58-7cb5e2a9a02e, cost: 2ms
+2024-03-21 19:03:39.809 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: f2a080ad-c6f4-4181-81b4-77f36730435b, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=test122等等, avatarUrl=null, email=null, phone=null, gender=null, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@ed9a68]
+2024-03-21 19:04:31.208 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 5f99dcf9-0f31-4bbf-a1bc-3c5f00930db2, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@5f1969d6]
+2024-03-21 19:04:31.212 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 5f99dcf9-0f31-4bbf-a1bc-3c5f00930db2, cost: 3ms
+2024-03-21 19:04:31.226 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: f92100b5-585f-4b80-9c62-72cf4ff777d2, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=test122等等, avatarUrl=null, email=null, phone=null, gender=null, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@4cdaf12d]
+2024-03-21 19:04:48.243 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-03-21 19:04:48.254 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2024-03-21 19:07:28.565 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 20312 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-21 19:07:28.567 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - The following 1 profile is active: "dev"
+2024-03-21 19:07:28.722 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-21 19:07:28.722 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-21 19:07:29.811 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-21 19:07:29.814 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-21 19:07:29.845 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-03-21 19:07:30.803 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-21 19:07:30.812 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 19:07:30.812 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 19:07:30.812 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-21 19:07:30.886 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-03-21 19:07:30.886 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2163 ms
+2024-03-21 19:07:33.969 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-21 19:07:36.587 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2024-03-21 19:07:36.605 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2024-03-21 19:07:37.641 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-21 19:07:37.659 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Started MainApplication in 9.816 seconds (JVM running for 12.156)
+2024-03-21 19:07:37.667 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Project started successfully！
+2024-03-21 19:07:46.030 [http-nio-0.0.0.0-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_3d964ae21216a10c78094c5ee54475da=1710656952,1710657982,1710658634,1710659811] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-03-21 19:07:46.037 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 19:07:46.038 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 19:07:46.040 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-03-21 19:07:46.086 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 046c70e1-3828-4df2-9ab4-3b4cdfea9805, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@46e493e2]
+2024-03-21 19:07:46.109 [http-nio-0.0.0.0-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 19:07:46.340 [http-nio-0.0.0.0-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 19:07:46.389 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 046c70e1-3828-4df2-9ab4-3b4cdfea9805, cost: 307ms
+2024-03-21 19:07:46.497 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 8ebfa2f6-012b-4d58-af22-9050415e048d, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=test122等等, avatarUrl=null, email=null, phone=null, gender=null, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@12d59c45]
+2024-03-21 19:10:14.565 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 35a8aef8-f238-462a-9b5e-4f2f492c9266, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@58fc2458]
+2024-03-21 19:10:14.570 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 35a8aef8-f238-462a-9b5e-4f2f492c9266, cost: 5ms
+2024-03-21 19:10:14.589 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 1e404606-2683-4ee3-b8d1-db00fadcbb9b, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=test122等等, avatarUrl=null, email=null, phone=null, gender=null, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@33d032b0]
+2024-03-21 19:15:24.962 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 1e8e9f72-a5fd-44b7-8f83-8829a1bcd8b3, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@3331f08e]
+2024-03-21 19:15:24.967 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 1e8e9f72-a5fd-44b7-8f83-8829a1bcd8b3, cost: 4ms
+2024-03-21 19:15:24.986 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 1d2cbbcf-2360-41ba-9355-c836a8cdb559, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=test122等等, avatarUrl=null, email=null, phone=null, gender=null, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@19f26700]
+2024-03-21 19:15:24.995 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 1d2cbbcf-2360-41ba-9355-c836a8cdb559, cost: 9ms
+2024-03-21 19:15:25.033 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 5325bbd6-3300-4b03-b9cb-e1417a202308, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@22eda624]
+2024-03-21 19:15:25.039 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 5325bbd6-3300-4b03-b9cb-e1417a202308, cost: 5ms
+2024-03-21 19:16:16.471 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: ee7bf261-afed-4419-9098-5c0bfb6da309, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@2d886eba]
+2024-03-21 19:16:16.475 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: ee7bf261-afed-4419-9098-5c0bfb6da309, cost: 4ms
+2024-03-21 19:16:35.416 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 47330295-d7e8-4bf7-9af3-fed04cc42261, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@1e257caf]
+2024-03-21 19:16:35.421 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 47330295-d7e8-4bf7-9af3-fed04cc42261, cost: 4ms
+2024-03-21 19:16:40.729 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: a7635038-2358-4fe2-8887-c09aa182d8d8, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@818d52e]
+2024-03-21 19:16:40.736 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: a7635038-2358-4fe2-8887-c09aa182d8d8, cost: 3ms
+2024-03-21 19:18:06.820 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: bb59d14d-fb20-44d6-a86c-034582dbaef6, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@466a26be]
+2024-03-21 19:18:06.828 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: bb59d14d-fb20-44d6-a86c-034582dbaef6, cost: 8ms
+2024-03-21 19:18:46.876 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 4702b982-432e-4fd0-a154-f106589b3545, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@6e5bc433]
+2024-03-21 19:18:46.881 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 4702b982-432e-4fd0-a154-f106589b3545, cost: 4ms
+2024-03-21 19:18:46.896 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: a74c3646-2a23-4cc6-83e8-44d23c38c4dd, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=null, avatarUrl=null, email=null, phone=null, gender=2, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@7b74e267]
+2024-03-21 19:18:46.913 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: a74c3646-2a23-4cc6-83e8-44d23c38c4dd, cost: 17ms
+2024-03-21 19:18:46.939 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 0d84001f-c487-438c-84b0-c9d9901fb0de, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@d43bedb]
+2024-03-21 19:18:46.945 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 0d84001f-c487-438c-84b0-c9d9901fb0de, cost: 5ms
+2024-03-21 19:18:50.104 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 8ea7edca-b858-4c3f-b285-f058c99bb3aa, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@4d51fb2b]
+2024-03-21 19:18:50.104 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 8ea7edca-b858-4c3f-b285-f058c99bb3aa, cost: 2ms
+2024-03-21 19:18:50.122 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 95be6247-f8d4-4c95-ae07-c3b59c8a34da, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=null, avatarUrl=null, email=null, phone=null, gender=1, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@8631984]
+2024-03-21 19:18:50.137 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 95be6247-f8d4-4c95-ae07-c3b59c8a34da, cost: 13ms
+2024-03-21 19:18:50.163 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 678d55cd-9877-4028-a81a-b52db33b3942, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@744889e5]
+2024-03-21 19:18:50.168 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 678d55cd-9877-4028-a81a-b52db33b3942, cost: 5ms
+2024-03-21 19:18:54.237 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 5ac7e588-eef1-471d-aeca-8498ceb45872, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@a7262e2]
+2024-03-21 19:18:54.240 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 5ac7e588-eef1-471d-aeca-8498ceb45872, cost: 3ms
+2024-03-21 19:18:54.253 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: d2b2af5b-dab1-45d0-b86c-455238d05699, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=null, avatarUrl=null, email=null, phone=null, gender=0, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@32c204ae]
+2024-03-21 19:18:54.254 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: d2b2af5b-dab1-45d0-b86c-455238d05699, cost: 6ms
+2024-03-21 19:18:54.275 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: e705197f-6466-4029-8697-cf46eacfcea6, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@7a58fcd1]
+2024-03-21 19:18:54.282 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: e705197f-6466-4029-8697-cf46eacfcea6, cost: 4ms
+2024-03-21 19:19:00.276 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 91293cfd-5164-45ac-90bc-a139086ed667, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@4c6cdcd4]
+2024-03-21 19:19:00.276 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 91293cfd-5164-45ac-90bc-a139086ed667, cost: 3ms
+2024-03-21 19:19:05.269 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 1ce720ee-0981-4f81-a73d-8218ce8f11f3, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@a5bd2c3]
+2024-03-21 19:19:05.275 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 1ce720ee-0981-4f81-a73d-8218ce8f11f3, cost: 5ms
+2024-03-21 19:19:12.821 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 65c2c916-caf1-458a-ab65-b160443b26c8, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@62a7969d]
+2024-03-21 19:19:12.824 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 65c2c916-caf1-458a-ab65-b160443b26c8, cost: 3ms
+2024-03-21 19:19:22.213 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 5c9f359d-dc11-456a-8bcb-9c17c1c87c97, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@7e3fd95b]
+2024-03-21 19:19:22.217 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 5c9f359d-dc11-456a-8bcb-9c17c1c87c97, cost: 3ms
+2024-03-21 19:19:22.228 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: dce4a34b-4722-408d-8ec4-a8d702bc28f3, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=null, avatarUrl=null, email=null, phone=13844444444, gender=null, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@75e5b164]
+2024-03-21 19:19:22.236 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: dce4a34b-4722-408d-8ec4-a8d702bc28f3, cost: 8ms
+2024-03-21 19:19:22.257 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 8c1c6192-8be7-46e0-be28-91f97a2d647b, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@d6a132d]
+2024-03-21 19:19:22.259 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 8c1c6192-8be7-46e0-be28-91f97a2d647b, cost: 2ms
+2024-03-21 19:19:27.860 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: ff53f85e-30a3-408d-8aa4-c661eefca77e, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@756a5df5]
+2024-03-21 19:19:27.862 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: ff53f85e-30a3-408d-8aa4-c661eefca77e, cost: 2ms
+2024-03-21 19:19:27.872 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 41e55070-c8e4-48cf-8a63-6202410e093c, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=null, avatarUrl=null, email=dfaetrtrtrtrddddddddddddtr@qq.com, phone=null, gender=null, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@3bbe276]
+2024-03-21 19:19:27.881 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 41e55070-c8e4-48cf-8a63-6202410e093c, cost: 8ms
+2024-03-21 19:19:27.900 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 6e5cad6a-f4e6-4ed3-b3ee-1397a508248b, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@42ee64af]
+2024-03-21 19:19:27.903 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 6e5cad6a-f4e6-4ed3-b3ee-1397a508248b, cost: 2ms
+2024-03-21 19:19:36.364 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 0b0c70fb-26c2-4cec-b670-b8a86e508d4d, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@7c5bd468]
+2024-03-21 19:19:36.367 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 0b0c70fb-26c2-4cec-b670-b8a86e508d4d, cost: 2ms
+2024-03-21 19:19:36.376 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 9a449ded-0264-431c-ad65-065cf090ca41, path: /api/user/update, ip: 0:0:0:0:0:0:0:1, params: [UserUpdateInfoRequest(id=9, userAccount=null, username=null, avatarUrl=null, email=null, phone=null, gender=null, userPassword=null), org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@2988fffc]
+2024-03-21 19:19:36.382 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 9a449ded-0264-431c-ad65-065cf090ca41, cost: 6ms
+2024-03-21 19:19:36.404 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 75e9f3bb-8c40-4ab5-926f-0b791a9098b3, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@260722a7]
+2024-03-21 19:19:36.410 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 75e9f3bb-8c40-4ab5-926f-0b791a9098b3, cost: 6ms
+2024-03-21 19:19:39.081 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: c4fd2fc3-5b52-4ef0-b1d6-c0bd59264906, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@33f2065d]
+2024-03-21 19:19:39.084 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: c4fd2fc3-5b52-4ef0-b1d6-c0bd59264906, cost: 2ms
+2024-03-21 19:19:41.366 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: dcf692d5-231e-4651-86d8-d8fdd0e3a417, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@1de13963]
+2024-03-21 19:19:41.370 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: dcf692d5-231e-4651-86d8-d8fdd0e3a417, cost: 3ms
+2024-03-21 19:19:44.239 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 8f86b316-dae3-4d7d-ba18-9d148d3dd5cc, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@1b1f1dab]
+2024-03-21 19:19:44.242 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 8f86b316-dae3-4d7d-ba18-9d148d3dd5cc, cost: 3ms
+2024-03-21 19:19:50.957 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: dcfb0b4f-cc2d-46bf-b6e0-1b43466190cc, path: /api/user/search/tags, ip: 0:0:0:0:0:0:0:1, params: [[男]]
+2024-03-21 19:19:50.990 [http-nio-0.0.0.0-8080-exec-3] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: dcfb0b4f-cc2d-46bf-b6e0-1b43466190cc, cost: 32ms
+2024-03-21 19:19:53.529 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: f2fed813-39f4-4b54-91d0-7b5a80f1e5e7, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@5a10977d]
+2024-03-21 19:19:53.532 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: f2fed813-39f4-4b54-91d0-7b5a80f1e5e7, cost: 3ms
+2024-03-21 19:20:19.417 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 6bae9b56-3a34-4d28-bd3c-1b1e89acd4ef, path: /api/user/search/tags, ip: 0:0:0:0:0:0:0:1, params: [[男]]
+2024-03-21 19:20:19.422 [http-nio-0.0.0.0-8080-exec-7] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 6bae9b56-3a34-4d28-bd3c-1b1e89acd4ef, cost: 4ms
+2024-03-21 19:20:30.536 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 190fca43-b406-4b9c-b28f-11425d603354, path: /api/user/search/tags, ip: 0:0:0:0:0:0:0:1, params: [[女]]
+2024-03-21 19:20:30.536 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 190fca43-b406-4b9c-b28f-11425d603354, cost: 4ms
+2024-03-21 19:20:39.879 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: e237e00f-62a6-43bf-a652-ea4b521f2ad5, path: /api/user/search/tags, ip: 0:0:0:0:0:0:0:1, params: [[男]]
+2024-03-21 19:20:39.885 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: e237e00f-62a6-43bf-a652-ea4b521f2ad5, cost: 5ms
+2024-03-21 19:21:47.647 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 6b0adc46-adf2-4bc2-a01e-5e2f3eb928d9, path: /api/user/search/tags, ip: 0:0:0:0:0:0:0:1, params: [[男]]
+2024-03-21 19:21:47.653 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 6b0adc46-adf2-4bc2-a01e-5e2f3eb928d9, cost: 6ms
+2024-03-21 19:21:49.958 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 9476c23c-dab8-44bc-8f63-c05085c76355, path: /api/user/search/tags, ip: 0:0:0:0:0:0:0:1, params: [[男]]
+2024-03-21 19:21:49.962 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 9476c23c-dab8-44bc-8f63-c05085c76355, cost: 4ms
+2024-03-21 19:23:00.499 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: b398b855-032a-4a66-b5bf-671d4fe0b827, path: /api/user/search/tags, ip: 0:0:0:0:0:0:0:1, params: [[java]]
+2024-03-21 19:23:00.503 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: b398b855-032a-4a66-b5bf-671d4fe0b827, cost: 4ms
+2024-03-21 19:24:53.761 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 91820f36-b188-47b0-bac0-535266ce769d, path: /api/user/search/tags, ip: 0:0:0:0:0:0:0:1, params: [[java]]
+2024-03-21 19:24:53.768 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 91820f36-b188-47b0-bac0-535266ce769d, cost: 6ms
+2024-03-21 19:25:06.111 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: d6d080c2-bb77-48ad-8a9c-c88f6a161638, path: /api/user/search/tags, ip: 0:0:0:0:0:0:0:1, params: [[java]]
+2024-03-21 19:25:06.114 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: d6d080c2-bb77-48ad-8a9c-c88f6a161638, cost: 5ms
+2024-03-21 19:25:17.146 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 3e777097-b619-4150-ad8d-069477506b05, path: /api/user/search/tags, ip: 0:0:0:0:0:0:0:1, params: [[男]]
+2024-03-21 19:25:17.148 [http-nio-0.0.0.0-8080-exec-5] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 3e777097-b619-4150-ad8d-069477506b05, cost: 5ms
+2024-03-21 19:25:24.085 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 5627ec7a-bdbb-4539-9789-4f1ff665d90d, path: /api/user/search/tags, ip: 0:0:0:0:0:0:0:1, params: [[大二]]
+2024-03-21 19:25:24.089 [http-nio-0.0.0.0-8080-exec-6] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 5627ec7a-bdbb-4539-9789-4f1ff665d90d, cost: 4ms
+2024-03-21 19:25:36.356 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: f1c945e3-23ed-46f4-bdc1-869edbb44b12, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@466a3169]
+2024-03-21 19:25:36.359 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: f1c945e3-23ed-46f4-bdc1-869edbb44b12, cost: 2ms
+2024-03-21 19:25:38.140 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 663d6f14-4033-46f1-9873-30ec47bc1d45, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@155b0025]
+2024-03-21 19:25:38.142 [http-nio-0.0.0.0-8080-exec-10] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 663d6f14-4033-46f1-9873-30ec47bc1d45, cost: 2ms
+2024-03-21 19:25:41.690 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: cfa1e5eb-96da-4fc0-8158-e1358375b87c, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@3582e99c]
+2024-03-21 19:25:41.697 [http-nio-0.0.0.0-8080-exec-1] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: cfa1e5eb-96da-4fc0-8158-e1358375b87c, cost: 2ms
+2024-03-21 19:25:45.409 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 4a7c2eca-9c1a-4869-922d-811b19fbb4fd, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@31e673b4]
+2024-03-21 19:25:45.410 [http-nio-0.0.0.0-8080-exec-2] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 4a7c2eca-9c1a-4869-922d-811b19fbb4fd, cost: 3ms
+2024-03-21 19:25:48.925 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 192894fe-10dc-40ff-8130-4d6aaa4c785c, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@1cdbfcce]
+2024-03-21 19:25:48.928 [http-nio-0.0.0.0-8080-exec-4] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 192894fe-10dc-40ff-8130-4d6aaa4c785c, cost: 3ms
+2024-03-21 19:25:50.553 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: b6138d93-642c-4fea-8280-ac95a74b915e, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@3c5f51bc]
+2024-03-21 19:25:50.555 [http-nio-0.0.0.0-8080-exec-8] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: b6138d93-642c-4fea-8280-ac95a74b915e, cost: 2ms
+2024-03-21 19:27:23.783 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request start，id: 7f476a93-6bc3-484e-8969-caac211b764b, path: /api/user/current, ip: 0:0:0:0:0:0:0:1, params: [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper@3e8020a3]
+2024-03-21 19:27:23.792 [http-nio-0.0.0.0-8080-exec-9] INFO  com.nanshuo.partnermatching.aop.LogInterceptor - request end, id: 7f476a93-6bc3-484e-8969-caac211b764b, cost: 8ms
+2024-03-21 19:27:43.503 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 19:27:43.517 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-21 20:00:21.628 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - Starting MainApplication using Java 1.8.0_402 on nanshuo with PID 18244 (E:\Desktop\code\2024\partner-matching-backend\target\classes started by dell in E:\Desktop\code\2024\partner-matching-backend)
+2024-03-21 20:00:21.629 [restartedMain] INFO  com.nanshuo.partnermatching.MainApplication - The following 1 profile is active: "dev"
+2024-03-21 20:00:21.709 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-21 20:00:21.709 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-21 20:00:22.915 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-21 20:00:22.918 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-21 20:00:22.948 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-03-21 20:00:23.888 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-21 20:00:23.982 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2272 ms

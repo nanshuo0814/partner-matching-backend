@@ -755,3 +755,417 @@
 2024-03-21 14:24:24.686 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
 2024-03-21 14:24:24.686 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
 2024-03-21 14:24:24.686 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.
+2024-03-21 14:26:30.789 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'tagMapper' and 'com.nanshuo.partnermatching.mapper.TagMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:26:30.789 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'teamMapper' and 'com.nanshuo.partnermatching.mapper.TeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:26:30.789 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:26:30.789 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:26:30.790 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.
+2024-03-21 14:29:36.380 [http-nio-0.0.0.0-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.nanshuo.partnermatching.exception.BusinessException: 请求参数为空]
+2024-03-21 14:31:12.311 [http-nio-0.0.0.0-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.nanshuo.partnermatching.exception.BusinessException: 请求参数为空]
+2024-03-21 14:32:44.593 [http-nio-0.0.0.0-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.nanshuo.partnermatching.exception.BusinessException: 未登录]
+2024-03-21 14:33:02.568 [http-nio-0.0.0.0-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.nanshuo.partnermatching.exception.BusinessException: 账号或密码错误]
+2024-03-21 14:33:11.803 [http-nio-0.0.0.0-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.nanshuo.partnermatching.exception.BusinessException: 账号或密码错误]
+2024-03-21 14:33:33.112 [http-nio-0.0.0.0-8080-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.nanshuo.partnermatching.exception.BusinessException: 账号或密码错误]
+2024-03-21 14:36:03.920 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'tagMapper' and 'com.nanshuo.partnermatching.mapper.TagMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:36:03.921 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'teamMapper' and 'com.nanshuo.partnermatching.mapper.TeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:36:03.921 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:36:03.921 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:36:03.921 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.
+2024-03-21 14:36:22.159 [http-nio-0.0.0.0-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.nanshuo.partnermatching.exception.BusinessException: 未登录]
+2024-03-21 14:36:59.352 [Thread-15] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-timer-3-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ io.netty.util.HashedWheelTimer$Worker.waitForNextTick(HashedWheelTimer.java:604)
+ io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:497)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 14:36:59.354 [Thread-15] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-1-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 14:36:59.354 [Thread-15] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 14:36:59.355 [Thread-15] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-1-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 14:36:59.357 [Thread-15] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-1-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 14:36:59.357 [Thread-15] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-1-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 14:36:59.358 [Thread-15] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-1-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 14:37:00.561 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'tagMapper' and 'com.nanshuo.partnermatching.mapper.TagMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:37:00.561 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'teamMapper' and 'com.nanshuo.partnermatching.mapper.TeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:37:00.562 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:37:00.562 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:37:00.562 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.
+2024-03-21 14:37:06.038 [Thread-26] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-timer-6-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ io.netty.util.HashedWheelTimer$Worker.waitForNextTick(HashedWheelTimer.java:604)
+ io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:497)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 14:37:06.880 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'tagMapper' and 'com.nanshuo.partnermatching.mapper.TagMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:37:06.880 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'teamMapper' and 'com.nanshuo.partnermatching.mapper.TeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:37:06.880 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:37:06.880 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:37:06.880 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.
+2024-03-21 14:38:54.329 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'tagMapper' and 'com.nanshuo.partnermatching.mapper.TagMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:38:54.329 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'teamMapper' and 'com.nanshuo.partnermatching.mapper.TeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:38:54.329 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:38:54.329 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 14:38:54.330 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.
+2024-03-21 18:50:24.759 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'tagMapper' and 'com.nanshuo.partnermatching.mapper.TagMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:50:24.760 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'teamMapper' and 'com.nanshuo.partnermatching.mapper.TeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:50:24.760 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:50:24.760 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:50:24.760 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.
+2024-03-21 18:53:41.166 [Thread-17] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-timer-3-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ io.netty.util.HashedWheelTimer$Worker.waitForNextTick(HashedWheelTimer.java:604)
+ io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:497)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:53:41.167 [Thread-17] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-1-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:53:41.167 [Thread-17] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:53:41.168 [Thread-17] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-1-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:53:41.169 [Thread-17] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-1-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:53:41.169 [Thread-17] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-1-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:53:41.170 [Thread-17] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-1-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:53:41.949 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'tagMapper' and 'com.nanshuo.partnermatching.mapper.TagMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:53:41.949 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'teamMapper' and 'com.nanshuo.partnermatching.mapper.TeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:53:41.949 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:53:41.949 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:53:41.949 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.
+2024-03-21 18:53:42.187 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'CheckAuthInterceptor': Resolution of declared constructors on bean Class [com.nanshuo.partnermatching.aop.CheckAuthInterceptorAop] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5362d11c] failed; nested exception is java.lang.NoClassDefFoundError: com/nanshuo/partnermatching/service/UserService
+2024-03-21 18:53:45.213 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'tagMapper' and 'com.nanshuo.partnermatching.mapper.TagMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:53:45.213 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'teamMapper' and 'com.nanshuo.partnermatching.mapper.TeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:53:45.213 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:53:45.213 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:53:45.213 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.
+2024-03-21 18:53:45.531 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'CheckAuthInterceptor' defined in file [E:\Desktop\code\2024\partner-matching-backend\target\classes\com\nanshuo\partnermatching\aop\CheckAuthInterceptorAop.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.nanshuo.partnermatching.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-03-21 18:54:02.190 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'tagMapper' and 'com.nanshuo.partnermatching.mapper.TagMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:54:02.190 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'teamMapper' and 'com.nanshuo.partnermatching.mapper.TeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:54:02.190 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:54:02.191 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:54:02.191 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.
+2024-03-21 18:54:02.542 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'CheckAuthInterceptor': Resolution of declared constructors on bean Class [com.nanshuo.partnermatching.aop.CheckAuthInterceptorAop] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4f062e2d] failed; nested exception is java.lang.NoClassDefFoundError: com/nanshuo/partnermatching/service/UserService
+2024-03-21 18:54:09.410 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'tagMapper' and 'com.nanshuo.partnermatching.mapper.TagMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:54:09.411 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'teamMapper' and 'com.nanshuo.partnermatching.mapper.TeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:54:09.411 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:54:09.411 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:54:09.411 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.
+2024-03-21 18:54:09.781 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'CheckAuthInterceptor' defined in file [E:\Desktop\code\2024\partner-matching-backend\target\classes\com\nanshuo\partnermatching\aop\CheckAuthInterceptorAop.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.nanshuo.partnermatching.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-03-21 18:55:08.258 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'tagMapper' and 'com.nanshuo.partnermatching.mapper.TagMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:55:08.258 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'teamMapper' and 'com.nanshuo.partnermatching.mapper.TeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:55:08.258 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:55:08.258 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:55:08.258 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.
+2024-03-21 18:55:08.517 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'CheckAuthInterceptor': Resolution of declared constructors on bean Class [com.nanshuo.partnermatching.aop.CheckAuthInterceptorAop] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1639d0d] failed; nested exception is java.lang.NoClassDefFoundError: com/nanshuo/partnermatching/service/UserService
+2024-03-21 18:55:21.230 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'tagMapper' and 'com.nanshuo.partnermatching.mapper.TagMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:55:21.231 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'teamMapper' and 'com.nanshuo.partnermatching.mapper.TeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:55:21.231 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:55:21.231 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:55:21.231 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.
+2024-03-21 18:55:58.896 [Thread-16] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-timer-3-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ io.netty.util.HashedWheelTimer$Worker.waitForNextTick(HashedWheelTimer.java:604)
+ io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:497)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:55:58.896 [Thread-16] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-1-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:55:58.896 [Thread-16] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:55:58.896 [Thread-16] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-1-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:55:58.896 [Thread-16] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-1-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:55:58.896 [Thread-16] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-1-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:55:58.896 [Thread-16] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-1-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:56:00.147 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'tagMapper' and 'com.nanshuo.partnermatching.mapper.TagMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:56:00.147 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'teamMapper' and 'com.nanshuo.partnermatching.mapper.TeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:56:00.147 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:56:00.147 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:56:00.147 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.
+2024-03-21 18:56:05.220 [Thread-27] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-timer-6-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ io.netty.util.HashedWheelTimer$Worker.waitForNextTick(HashedWheelTimer.java:604)
+ io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:497)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:56:06.665 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'tagMapper' and 'com.nanshuo.partnermatching.mapper.TagMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:56:06.666 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'teamMapper' and 'com.nanshuo.partnermatching.mapper.TeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:56:06.666 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:56:06.666 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:56:06.666 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.
+2024-03-21 18:56:22.726 [Thread-31] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-timer-9-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ io.netty.util.HashedWheelTimer$Worker.waitForNextTick(HashedWheelTimer.java:604)
+ io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:497)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:56:22.727 [Thread-31] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-8-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:56:22.727 [Thread-31] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:56:22.727 [Thread-31] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-8-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:56:22.728 [Thread-31] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-8-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:56:22.728 [Thread-31] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-8-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:56:22.728 [Thread-31] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-8-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2024-03-21 18:56:23.530 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'tagMapper' and 'com.nanshuo.partnermatching.mapper.TagMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:56:23.530 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'teamMapper' and 'com.nanshuo.partnermatching.mapper.TeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:56:23.530 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:56:23.530 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:56:23.530 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.
+2024-03-21 18:56:23.837 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'CheckAuthInterceptor' defined in file [E:\Desktop\code\2024\partner-matching-backend\target\classes\com\nanshuo\partnermatching\aop\CheckAuthInterceptorAop.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.nanshuo.partnermatching.service.impl.UserServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4cb6230c]
+2024-03-21 18:56:25.963 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'tagMapper' and 'com.nanshuo.partnermatching.mapper.TagMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:56:25.963 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'teamMapper' and 'com.nanshuo.partnermatching.mapper.TeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:56:25.963 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:56:25.963 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 18:56:25.963 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.
+2024-03-21 18:59:33.937 [http-nio-0.0.0.0-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE7\x94\xA8\xE6\x88\xB7...' for column 'username' at row 1<EOL><EOL>### The error may exist in com/nanshuo/partnermatching/mapper/UserMapper.java (best guess)<EOL><EOL>### The error may involve com.nanshuo.partnermatching.mapper.UserMapper.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE user  SET username=?, userAccount=?, avatarUrl=?, gender=?, userPassword=?, phone=?,  email=?  WHERE id=?  AND isDelete=0<EOL><EOL>### Cause: java.sql.SQLException: Incorrect string value: '\xE7\x94\xA8\xE6\x88\xB7...' for column 'username' at row 1<EOL>; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE7\x94\xA8\xE6\x88\xB7...' for column 'username' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE7\x94\xA8\xE6\x88\xB7...' for column 'username' at row 1]
+2024-03-21 18:59:36.597 [http-nio-0.0.0.0-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE7\x94\xA8\xE6\x88\xB7...' for column 'username' at row 1<EOL><EOL>### The error may exist in com/nanshuo/partnermatching/mapper/UserMapper.java (best guess)<EOL><EOL>### The error may involve com.nanshuo.partnermatching.mapper.UserMapper.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE user  SET username=?, userAccount=?, avatarUrl=?, gender=?, userPassword=?, phone=?,  email=?  WHERE id=?  AND isDelete=0<EOL><EOL>### Cause: java.sql.SQLException: Incorrect string value: '\xE7\x94\xA8\xE6\x88\xB7...' for column 'username' at row 1<EOL>; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE7\x94\xA8\xE6\x88\xB7...' for column 'username' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE7\x94\xA8\xE6\x88\xB7...' for column 'username' at row 1]
+2024-03-21 18:59:48.895 [http-nio-0.0.0.0-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE7\x94\xA8\xE6\x88\xB7...' for column 'username' at row 1<EOL><EOL>### The error may exist in com/nanshuo/partnermatching/mapper/UserMapper.java (best guess)<EOL><EOL>### The error may involve com.nanshuo.partnermatching.mapper.UserMapper.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE user  SET username=?, userAccount=?, avatarUrl=?, gender=?, userPassword=?, phone=?,  email=?  WHERE id=?  AND isDelete=0<EOL><EOL>### Cause: java.sql.SQLException: Incorrect string value: '\xE7\x94\xA8\xE6\x88\xB7...' for column 'username' at row 1<EOL>; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE7\x94\xA8\xE6\x88\xB7...' for column 'username' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE7\x94\xA8\xE6\x88\xB7...' for column 'username' at row 1]
+2024-03-21 19:01:24.667 [http-nio-0.0.0.0-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1<EOL><EOL>### The error may exist in com/nanshuo/partnermatching/mapper/UserMapper.java (best guess)<EOL><EOL>### The error may involve com.nanshuo.partnermatching.mapper.UserMapper.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE user  SET username=?, userAccount=?, avatarUrl=?, gender=?, userPassword=?, phone=?,  email=?  WHERE id=?  AND isDelete=0<EOL><EOL>### Cause: java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1<EOL>; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1]
+2024-03-21 19:02:59.091 [http-nio-0.0.0.0-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1<EOL><EOL>### The error may exist in com/nanshuo/partnermatching/mapper/UserMapper.java (best guess)<EOL><EOL>### The error may involve com.nanshuo.partnermatching.mapper.UserMapper.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE user  SET username=?, userAccount=?, avatarUrl=?, gender=?, userPassword=?, phone=?,  email=?  WHERE id=?  AND isDelete=0<EOL><EOL>### Cause: java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1<EOL>; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1]
+2024-03-21 19:03:30.188 [http-nio-0.0.0.0-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1<EOL><EOL>### The error may exist in com/nanshuo/partnermatching/mapper/UserMapper.java (best guess)<EOL><EOL>### The error may involve com.nanshuo.partnermatching.mapper.UserMapper.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE user  SET username=?, userAccount=?, avatarUrl=?, gender=?, userPassword=?, phone=?,  email=?  WHERE id=?  AND isDelete=0<EOL><EOL>### Cause: java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1<EOL>; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1]
+2024-03-21 19:03:31.767 [http-nio-0.0.0.0-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1<EOL><EOL>### The error may exist in com/nanshuo/partnermatching/mapper/UserMapper.java (best guess)<EOL><EOL>### The error may involve com.nanshuo.partnermatching.mapper.UserMapper.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE user  SET username=?, userAccount=?, avatarUrl=?, gender=?, userPassword=?, phone=?,  email=?  WHERE id=?  AND isDelete=0<EOL><EOL>### Cause: java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1<EOL>; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1]
+2024-03-21 19:03:39.823 [http-nio-0.0.0.0-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1<EOL><EOL>### The error may exist in com/nanshuo/partnermatching/mapper/UserMapper.java (best guess)<EOL><EOL>### The error may involve com.nanshuo.partnermatching.mapper.UserMapper.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE user  SET username=?, userAccount=?, avatarUrl=?, gender=?, userPassword=?, phone=?,  email=?  WHERE id=?  AND isDelete=0<EOL><EOL>### Cause: java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1<EOL>; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1]
+2024-03-21 19:04:31.239 [http-nio-0.0.0.0-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1<EOL><EOL>### The error may exist in com/nanshuo/partnermatching/mapper/UserMapper.java (best guess)<EOL><EOL>### The error may involve com.nanshuo.partnermatching.mapper.UserMapper.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE user  SET username=?, userAccount=?, avatarUrl=?, gender=?, userPassword=?, phone=?,  email=?  WHERE id=?  AND isDelete=0<EOL><EOL>### Cause: java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1<EOL>; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1]
+2024-03-21 19:07:30.026 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'tagMapper' and 'com.nanshuo.partnermatching.mapper.TagMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 19:07:30.026 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'teamMapper' and 'com.nanshuo.partnermatching.mapper.TeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 19:07:30.026 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 19:07:30.026 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 19:07:30.027 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.
+2024-03-21 19:07:46.603 [http-nio-0.0.0.0-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1<EOL><EOL>### The error may exist in com/nanshuo/partnermatching/mapper/UserMapper.java (best guess)<EOL><EOL>### The error may involve com.nanshuo.partnermatching.mapper.UserMapper.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE user  SET username=?, userAccount=?, avatarUrl=?, gender=?, userPassword=?, phone=?,  email=?  WHERE id=?  AND isDelete=0<EOL><EOL>### Cause: java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1<EOL>; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1]
+2024-03-21 19:10:14.606 [http-nio-0.0.0.0-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1<EOL><EOL>### The error may exist in com/nanshuo/partnermatching/mapper/UserMapper.java (best guess)<EOL><EOL>### The error may involve com.nanshuo.partnermatching.mapper.UserMapper.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE user  SET username=?, userAccount=?, avatarUrl=?, gender=?, userPassword=?, phone=?,  email=?  WHERE id=?  AND isDelete=0<EOL><EOL>### Cause: java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1<EOL>; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE7\xAD\x89\xE7\xAD\x89' for column 'username' at row 1]
+2024-03-21 19:16:40.758 [http-nio-0.0.0.0-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "男": not a valid `java.lang.Integer` value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "男": not a valid `java.lang.Integer` value<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 18] (through reference chain: com.nanshuo.partnermatching.model.request.user.UserUpdateInfoRequest["gender"])]
+2024-03-21 19:18:06.852 [http-nio-0.0.0.0-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "男": not a valid `java.lang.Integer` value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "男": not a valid `java.lang.Integer` value<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 18] (through reference chain: com.nanshuo.partnermatching.model.request.user.UserUpdateInfoRequest["gender"])]
+2024-03-21 19:19:05.300 [http-nio-0.0.0.0-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.nanshuo.partnermatching.exception.BusinessException: 手机号非法/错误]
+2024-03-21 19:19:12.841 [http-nio-0.0.0.0-8080-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.nanshuo.partnermatching.exception.BusinessException: 手机号非法/错误]
+2024-03-21 20:00:23.121 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'tagMapper' and 'com.nanshuo.partnermatching.mapper.TagMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 20:00:23.121 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'teamMapper' and 'com.nanshuo.partnermatching.mapper.TeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 20:00:23.121 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.nanshuo.partnermatching.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 20:00:23.123 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userTeamMapper' and 'com.nanshuo.partnermatching.mapper.UserTeamMapper' mapperInterface. Bean already defined with the same name!
+2024-03-21 20:00:23.123 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nanshuo.partnermatching.mapper]' package. Please check your configuration.

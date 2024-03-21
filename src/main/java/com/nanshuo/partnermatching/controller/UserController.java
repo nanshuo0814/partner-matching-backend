@@ -23,7 +23,6 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -61,7 +60,7 @@ public class UserController {
      */
     @GetMapping("/current")
     @ApiOperation(value = "获取当前用户", notes = "获取当前用户")
-    public BaseResponse<UserSafetyVO> getCurrentUser(HttpServletRequest request) {
+    public BaseResponse<UserLoginVO> getCurrentUser(HttpServletRequest request) {
         Object userObj = request.getSession().getAttribute(USER_LOGIN_STATE);
         User currentUser = (User) userObj;
         if (currentUser == null) {
@@ -69,7 +68,7 @@ public class UserController {
         }
         long userId = currentUser.getId();
         User user = userService.getById(userId);
-        UserSafetyVO safetyUser = userService.getUserSafetyVO(user);
+        UserLoginVO safetyUser = userService.getUserSafetyVO(user);
         return ResultUtils.success(safetyUser);
     }
 
@@ -155,7 +154,7 @@ public class UserController {
      */
     @GetMapping("/search/tags")
     @ApiOperation(value = "按标签搜索用户", notes = "按标签搜索用户")
-    public BaseResponse<List<UserSafetyVO>> searchUsersByTags(@RequestParam(required = false)
+    public BaseResponse<List<UserLoginVO>> searchUsersByTags(@RequestParam(required = false)
                                                               List<String> tagNameList) {
         return ResultUtils.success(userService.searchUsersByTags(tagNameList));
     }
@@ -169,13 +168,13 @@ public class UserController {
     @GetMapping("/search")
     @ApiOperation(value = "搜索用户", notes = "搜索用户")
     @CheckAuth(mustRole = UserConstant.ADMIN_ROLE)
-    public BaseResponse<List<UserSafetyVO>> searchUsers(String username) {
+    public BaseResponse<List<UserLoginVO>> searchUsers(String username) {
         LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper<>();
         if (StringUtils.isNotBlank(username)) {
             queryWrapper.like(User::getUsername, username);
         }
         List<User> userList = userService.list(queryWrapper);
-        List<UserSafetyVO> list = userList.stream().map(userService::getUserSafetyVO).collect(Collectors.toList());
+        List<UserLoginVO> list = userList.stream().map(userService::getUserSafetyVO).collect(Collectors.toList());
         return ResultUtils.success(list);
     }
 

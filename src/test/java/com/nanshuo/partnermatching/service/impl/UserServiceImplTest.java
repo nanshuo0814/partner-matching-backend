@@ -1,5 +1,6 @@
 package com.nanshuo.partnermatching.service.impl;
 
+import com.nanshuo.partnermatching.model.vo.user.UserLoginVO;
 import com.nanshuo.partnermatching.model.vo.user.UserSafetyVO;
 import com.nanshuo.partnermatching.service.UserService;
 import org.junit.jupiter.api.Assertions;
@@ -20,7 +21,7 @@ class UserServiceImplTest {
     @Test
     void searchUsersByTags() {
         List<String> tagNameList = Arrays.asList("java", "python");
-        List<UserSafetyVO> userList = userService.searchUsersByTags(tagNameList);
+        List<UserLoginVO> userList = userService.searchUsersByTags(tagNameList);
         Assertions.assertNotNull(userList);
     }
 }

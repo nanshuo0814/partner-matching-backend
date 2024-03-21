@@ -170,11 +170,11 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
      * @return {@code UserVO}
      */
     @Override
-    public UserSafetyVO getUserSafetyVO(User user) {
+    public UserLoginVO getUserSafetyVO(User user) {
         if (user == null) {
             return null;
         }
-        UserSafetyVO userSafetyVO = new UserSafetyVO();
+        UserLoginVO userSafetyVO = new UserLoginVO();
         BeanUtils.copyProperties(user, userSafetyVO);
         return userSafetyVO;
     }
@@ -266,7 +266,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
      * @return {@code List<UserSafetyVO>}
      */
     @Override
-    public List<UserSafetyVO> searchUsersByTags(List<String> tagNameList) {
+    public List<UserLoginVO> searchUsersByTags(List<String> tagNameList) {
         if (CollectionUtils.isEmpty(tagNameList)) {
             throw new BusinessException(ErrorCode.PARAMS_NULL);
         }
@@ -289,13 +289,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         }).map(this::getUserSafetyVO).collect(Collectors.toList());
     }
 
-    /**
-     * 更新用户
-     *
-     * @param user      用户
-     * @param loginUser 登录用户
-     * @return {@code Integer}
-     */
     @Override
     public Integer updateUser(UserUpdateInfoRequest user, User loginUser) {
         long userId = user.getId();

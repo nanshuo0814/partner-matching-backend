@@ -61,6 +61,9 @@ public class UserLoginVO implements Serializable {
     @ApiModelProperty(value = "用户角色：user/admin/ban", required = true)
     private String userRole;
 
+    private String planetCode;
+    private String phone;
+
     /**
      * 标签 json 列表
      */

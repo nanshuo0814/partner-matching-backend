@@ -82,9 +82,9 @@ public interface UserService extends IService<User> {
      * @param user 用户
      * @return {@code UserSafetyVO}
      */
-    UserSafetyVO getUserSafetyVO(User user);
+    UserLoginVO getUserSafetyVO(User user);
 
-    List<UserSafetyVO> searchUsersByTags(List<String> tagNameList);
+    List<UserLoginVO> searchUsersByTags(List<String> tagNameList);
 
     Integer updateUser(UserUpdateInfoRequest user, User loginUser);
 }

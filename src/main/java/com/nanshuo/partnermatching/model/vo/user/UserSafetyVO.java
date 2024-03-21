@@ -22,6 +22,12 @@ public class UserSafetyVO implements Serializable {
     private Long id;
 
     /**
+     * 用户账号
+     */
+    @ApiModelProperty(value = "用户账号", required = true)
+    private String userAccount;
+
+    /**
      * 用户昵称
      */
     @ApiModelProperty(value = "用户昵称", required = true)
