@@ -39,6 +39,7 @@
         <easyexcel.version>3.1.1</easyexcel.version>
         <!-- hutool-all版本号 -->
         <hutool.version>5.8.8</hutool.version>
+        <redisson.version>3.17.5</redisson.version>
     </properties>
 
     <dependencies>
@@ -69,6 +70,12 @@
         <dependency>
             <groupId>org.springframework.session</groupId>
             <artifactId>spring-session-data-redis</artifactId>
+        </dependency>
+        <!-- https://github.com/redisson/redisson#quick-start -->
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>${redisson.version}</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
