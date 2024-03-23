@@ -13,6 +13,9 @@ import java.util.Date;
 @TableName(value ="team")
 @Data
 public class Team implements Serializable {
+
+    @TableField(exist = false)
+    private static final long serialVersionUID = -584434321929927842L;
     /**
      * id
      */
@@ -70,6 +73,4 @@ public class Team implements Serializable {
     @TableLogic
     private Integer isDelete;
 
-    @TableField(exist = false)
-    private static final long serialVersionUID = 1L;
 }
