@@ -1,5 +1,7 @@
 package com.nanshuo.partnermatching.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.nanshuo.partnermatching.annotation.Check;
 import com.nanshuo.partnermatching.common.BaseResponse;
 import com.nanshuo.partnermatching.common.ErrorCode;
@@ -10,6 +12,7 @@ import com.nanshuo.partnermatching.model.domain.Team;
 import com.nanshuo.partnermatching.model.domain.User;
 import com.nanshuo.partnermatching.model.request.team.DeleteRequest;
 import com.nanshuo.partnermatching.model.request.team.TeamAddRequest;
+import com.nanshuo.partnermatching.model.request.team.TeamQueryRequest;
 import com.nanshuo.partnermatching.model.request.team.TeamUpdateRequest;
 import com.nanshuo.partnermatching.service.TeamService;
 import com.nanshuo.partnermatching.service.UserService;
@@ -118,6 +121,25 @@ public class TeamController {
             throw new BusinessException(ErrorCode.SYSTEM_ERROR, "删除失败");
         }
         return ResultUtils.success(true);
+    }
+
+    /**
+     * 按页面列出团队
+     *
+     * @param teamQuery 团队查询
+     * @return {@code BaseResponse<Page<Team>>}
+     */
+    @GetMapping("/list/page")
+    public BaseResponse<Page<Team>> listTeamsByPage(TeamQueryRequest teamQuery) {
+        if (teamQuery == null) {
+            throw new BusinessException(ErrorCode.PARAMS_ERROR);
+        }
+        Team team = new Team();
+        BeanUtils.copyProperties(teamQuery, team);
+        Page<Team> page = new Page<>(teamQuery.getPageNum(), teamQuery.getPageSize());
+        QueryWrapper<Team> queryWrapper = new QueryWrapper<>(team);
+        Page<Team> resultPage = teamService.page(page, queryWrapper);
+        return ResultUtils.success(resultPage);
     }
 
 }
