@@ -159,7 +159,6 @@ public class UserController {
      * @return {@code BaseResponse<List<User>>}
      */
     @GetMapping("/search/tags")
-    @Check(checkParam = true)
     @ApiOperation(value = "按标签搜索用户", notes = "按标签搜索用户")
     public BaseResponse<List<UserLoginVO>> searchUsersByTags(@RequestParam(required = false)
                                                               List<String> tagNameList) {

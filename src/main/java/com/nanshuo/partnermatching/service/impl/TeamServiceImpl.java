@@ -1,6 +1,5 @@
 package com.nanshuo.partnermatching.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.nanshuo.partnermatching.common.ErrorCode;
@@ -91,8 +90,10 @@ public class TeamServiceImpl extends ServiceImpl<TeamMapper, Team> implements Te
         }
         // 6. 超时时间 > 当前时间
         Date expireTime = team.getExpireTime();
-        if (new Date().after(expireTime)) {
-            throw new BusinessException(ErrorCode.PARAMS_ERROR, "超时时间 > 当前时间");
+        if (expireTime != null) {
+            if (new Date().after(expireTime)) {
+                throw new BusinessException(ErrorCode.PARAMS_ERROR, "超时时间 > 当前时间");
+            }
         }
         // 7. 校验用户最多创建 5 个队伍
         // todo 有 bug，可能同时创建 100 个队伍
