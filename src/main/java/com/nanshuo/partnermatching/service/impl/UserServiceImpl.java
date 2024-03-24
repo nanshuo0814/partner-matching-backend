@@ -26,12 +26,11 @@ import org.springframework.util.DigestUtils;
 import org.springframework.util.ObjectUtils;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
+
+import static com.nanshuo.partnermatching.constant.UserConstant.USER_LOGIN_STATE;
 
 
 /**
@@ -139,7 +138,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         }
 
         // 记录用户的登录状态
-        request.getSession().setAttribute(UserConstant.USER_LOGIN_STATE, user);
+        request.getSession().setAttribute(USER_LOGIN_STATE, user);
         // 缓存用户信息
         redisTemplate.opsForValue().set(RedisKeyConstant.USER_LOGIN_STATE_CACHE + user.getId(), user);
 
@@ -190,7 +189,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     public User getLoginUser(HttpServletRequest request) {
 
         // 先判断是否已登录,获取用户信息
-        User user = (User) request.getSession().getAttribute(UserConstant.USER_LOGIN_STATE);
+        User user = (User) request.getSession().getAttribute(USER_LOGIN_STATE);
         if (user == null) {
             throw new BusinessException(ErrorCode.NOT_LOGIN_ERROR);
         }
@@ -245,13 +244,13 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     @Override
     public String userLogout(HttpServletRequest request) {
         // 判断是否已登录
-        if (request.getSession().getAttribute(UserConstant.USER_LOGIN_STATE) == null) {
+        if (request.getSession().getAttribute(USER_LOGIN_STATE) == null) {
             throw new BusinessException(ErrorCode.FAIL, "未登录");
         }
         // 删除缓存
         redisTemplate.delete(RedisKeyConstant.USER_LOGIN_STATE_CACHE + this.getLoginUser(request).getId());
         // 移除登录态
-        request.getSession().removeAttribute(UserConstant.USER_LOGIN_STATE);
+        request.getSession().removeAttribute(USER_LOGIN_STATE);
         return "退出登录成功！";
     }
 
@@ -314,5 +313,13 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         updateUser.setGender(!ObjectUtils.isEmpty(user.getGender()) ? user.getGender() : oldUser.getGender());
         updateUser.setUserPassword(!ObjectUtils.isEmpty(user.getUserPassword()) ? user.getUserPassword() : oldUser.getUserPassword());
         return this.baseMapper.updateById(updateUser);
+    }
+
+    @Override
+    public boolean isAdmin(HttpServletRequest request) {
+        // 仅管理员可查询
+        Object userObj = request.getSession().getAttribute(USER_LOGIN_STATE);
+        User user = (User) userObj;
+        return user != null && Objects.equals(user.getUserRole(), UserConstant.ADMIN_ROLE);
     }
 }

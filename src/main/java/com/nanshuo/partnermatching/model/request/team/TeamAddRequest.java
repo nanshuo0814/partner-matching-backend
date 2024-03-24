@@ -20,25 +20,21 @@ public class TeamAddRequest implements Serializable {
     /**
      * 队伍名称
      */
-    @CheckParam(alias = "队伍名称",maxLength = 20)
     private String name;
 
     /**
      * 描述
      */
-    @CheckParam(alias = "队伍简介",maxLength = 512)
     private String description;
 
     /**
      * 最大人数
      */
-    @CheckParam(alias = "队伍人数")
     private Integer maxNum;
 
     /**
      * 过期时间
      */
-    @CheckParam(required = NumberConstant.FALSE_VALUE,alias = "队伍过期时间")
     private Date expireTime;
 
     /**
@@ -50,12 +46,10 @@ public class TeamAddRequest implements Serializable {
     /**
      * 0 - 公开，1 - 私有，2 - 加密
      */
-    @CheckParam(required = NumberConstant.FALSE_VALUE,alias = "队伍状态")
     private Integer status;
 
     /**
      * 密码
      */
-    @CheckParam(required = NumberConstant.FALSE_VALUE,alias = "队伍密码")
     private String password;
 }

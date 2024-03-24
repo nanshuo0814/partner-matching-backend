@@ -84,7 +84,28 @@ public interface UserService extends IService<User> {
      */
     UserLoginVO getUserSafetyVO(User user);
 
+    /**
+     * 按标签搜索用户
+     *
+     * @param tagNameList 标签名称列表
+     * @return {@code List<UserLoginVO>}
+     */
     List<UserLoginVO> searchUsersByTags(List<String> tagNameList);
 
+    /**
+     * 更新用户
+     *
+     * @param user      用户
+     * @param loginUser 登录用户
+     * @return {@code Integer}
+     */
     Integer updateUser(UserUpdateInfoRequest user, User loginUser);
+
+    /**
+     * 是admin
+     *
+     * @param request 请求
+     * @return boolean
+     */
+    boolean isAdmin(HttpServletRequest request);
 }
