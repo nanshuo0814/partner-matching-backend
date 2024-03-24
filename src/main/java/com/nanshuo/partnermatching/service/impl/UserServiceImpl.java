@@ -16,9 +16,11 @@ import com.nanshuo.partnermatching.model.request.user.UserLoginRequest;
 import com.nanshuo.partnermatching.model.request.user.UserRegisterRequest;
 import com.nanshuo.partnermatching.model.request.user.UserUpdateInfoRequest;
 import com.nanshuo.partnermatching.model.vo.user.UserLoginVO;
-import com.nanshuo.partnermatching.model.vo.user.UserSafetyVO;
 import com.nanshuo.partnermatching.service.UserService;
+import com.nanshuo.partnermatching.utils.AlgorithmUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.math3.util.Pair;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
@@ -322,4 +324,61 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         User user = (User) userObj;
         return user != null && Objects.equals(user.getUserRole(), UserConstant.ADMIN_ROLE);
     }
+
+    /**
+     * 匹配用户
+     *
+     * @param num       num
+     * @param loginUser 登录用户
+     * @return {@code List<UserLoginVO>}
+     */
+    @Override
+    public List<UserLoginVO> matchUsers(long num, User loginUser) {
+        // 查询特定的字段来提高性能,排除不需要的字段
+        QueryWrapper<User> qw = new QueryWrapper<>();
+        qw.select("id", "tags");
+        // 查询有标签的用户
+        qw.isNotNull("tags");
+        List<User> userList = this.list(qw);
+        // 获取当前用户的tags标签
+        String tags = loginUser.getTags();
+        // 使用gson来将tags标签转换为List数组
+        Gson gson = new Gson();
+        List<String> tagList = gson.fromJson(tags, new TypeToken<List<String>>() {
+        }.getType());
+        // 用户列表的下标 => 相似度
+        List<Pair<User,Long>> list = new ArrayList<>();
+        // 依次计算所有用户和当前用户的相似度
+        for (User user : userList) {
+            String userTags = user.getTags();
+            // 无标签或者为当前用户自己
+            if (StringUtils.isBlank(userTags) || Objects.equals(user.getId(), loginUser.getId()))
+                continue;
+            List<String> userTagList = gson.fromJson(userTags, new TypeToken<List<String>>() {
+            }.getType());
+            long distance = AlgorithmUtils.minDistance(tagList, userTagList);
+            list.add(new Pair<>(user, distance));
+        }
+        // 按编辑距离由小到大排序
+        List<Pair<User, Long>> topUserPairList = list.stream().sorted((a, b) -> (int) (a.getValue() - b.getValue()))
+                .limit(num).collect(Collectors.toList());
+        // 原本顺序的 userId 列表
+        List<Long> userIdList = topUserPairList.stream().map(pair -> pair.getKey().getId()).collect(Collectors.toList());
+        QueryWrapper<User> userQueryWrapper = new QueryWrapper<>();
+        userQueryWrapper.in("id", userIdList);
+        // 1, 3, 2
+        // User1、User2、User3
+        // 1 => User1, 2 => User2, 3 => User3
+        Map<Long, List<UserLoginVO>> userIdUserListMap = this.list(userQueryWrapper).stream()
+                .map(this::getUserSafetyVO)
+                .collect(Collectors.groupingBy(UserLoginVO::getId));
+        List<UserLoginVO> finalUserList = new ArrayList<>();
+        // 将 userIdList 中的 userId 与 userIdUserListMap 中的 userIdUserListMap 的 key 相对应
+        for (Long userId : userIdList) {
+            finalUserList.add(userIdUserListMap.get(userId).get(0));
+        }
+        // 返回结果
+        return finalUserList;
+    }
+
 }

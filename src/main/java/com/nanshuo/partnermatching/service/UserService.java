@@ -108,4 +108,13 @@ public interface UserService extends IService<User> {
      * @return boolean
      */
     boolean isAdmin(HttpServletRequest request);
+
+    /**
+     * 匹配用户
+     *
+     * @param num  num
+     * @param user 用户
+     * @return {@code List<User>}
+     */
+    List<UserLoginVO> matchUsers(long num, User user);
 }

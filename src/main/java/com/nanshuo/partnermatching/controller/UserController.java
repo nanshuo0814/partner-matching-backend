@@ -216,5 +216,20 @@ public class UserController {
     }
 
 
+    /**
+     * 匹配用户
+     *
+     * @param num     num
+     * @param request 请求
+     * @return {@code BaseResponse<List<User>>}
+     */
+    @GetMapping("/match")
+    public BaseResponse<List<UserLoginVO>> matchUsers(long num, HttpServletRequest request) {
+        if (num <= 0 || num > 20) {
+            throw new BusinessException(ErrorCode.PARAMS_ERROR);
+        }
+        User user = userService.getLoginUser(request);
+        return ResultUtils.success(userService.matchUsers(num, user));
+    }
 
 }
